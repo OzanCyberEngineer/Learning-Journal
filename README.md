@@ -16,7 +16,11 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     -------------------------------------------------------------------------------------------------------------------
     *   [MAC Address & Ethernet Basics (English)](./Seviye-1_Temeller/networking/MAC-Address-and-Ethernet-Basics.md)
     *   [MAC Adresi ve Ethernet Temelleri (Türkçe)](./Seviye-1_Temeller/networking/MAC-Address-and-Ethernet-Basics-TR.md)
-    *   *Subnetting & Routing Analysis (Coming Soon...)*
+    -----------------------------------------------------------------------------------------------------------------------
+    * [ARP Protocol & Poisoning Attacks (English)](./Seviye-1_Temeller/networking/ARP-Protocol-and-Poisoning.md)
+    * [ARP Protokolü ve Zehirlenme Saldırıları (Türkçe)](./Seviye-1_Temeller/networking/ARP-Protocol-and-Poisoning-TR.md)
+    -----------------------------------------------------------------------------------------------------------------------
+      *   *Subnetting & Routing Analysis (Coming Soon...)*
 
 *   **Linux Foundations & Hardening**
     *   *Linux Filesystem & Permissions (Coming Soon...)*
