@@ -11,8 +11,8 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
 ### 🌐 Level 1: Computer Engineering & System Foundations
 
 *   **Networking Labs & Analysis**
-    *   [OSI Model & Encapsulation - Detailed Report (English)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation.md)
-    *   [OSI Modeli ve Kapsülleme - Detaylı Rapor (Türkçe)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation-TR.md)
+    *   [OSI Model & Encapsulation (English)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation.md)
+    *   [OSI Modeli ve Kapsülleme (Türkçe)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation-TR.md)
     *   [MAC Address & Ethernet Basics (English)](./Seviye-1_Temeller/networking/MAC-Address-and-Ethernet-Basics.md)
     *   [MAC Adresi ve Ethernet Temelleri (Türkçe)](./Seviye-1_Temeller/networking/MAC-Address-and-Ethernet-Basics-TR.md)
     *   *Subnetting & Routing Analysis (Coming Soon...)*
