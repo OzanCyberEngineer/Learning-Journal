@@ -25,6 +25,9 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [IPv4 Concepts & Subnetting (English)](./Seviye-1_Temeller/networking/IPv4-Concepts-and-Subnetting.md)
     * [IPv4 Mimarisi ve Alt Ağlara Bölme (Türkçe)](./Seviye-1_Temeller/networking/IPv4-Concepts-and-Subnetting-TR.md)
     ------------------------------------------------------------------------------------------------------------------------
+    * [DNS Concepts & Security (English)](./Seviye-1_Temeller/networking/DNS-Concepts-and-Security.md)
+    * [DNS Mimarisi ve Güvenlik Protokolleri (Türkçe)](./Seviye-1_Temeller/networking/DNS-Concepts-and-Security-TR.md)
+    ------------------------------------------------------------------------------------------------------------------------
       *   *Subnetting & Routing Analysis (Coming Soon...)*
 
 *   **Linux Foundations & Hardening**
