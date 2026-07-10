@@ -28,6 +28,9 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [DNS Concepts & Security (English)](./Seviye-1_Temeller/networking/DNS-Concepts-and-Security.md)
     * [DNS Mimarisi ve Güvenlik Protokolleri (Türkçe)](./Seviye-1_Temeller/networking/DNS-Concepts-and-Security-TR.md)
     ------------------------------------------------------------------------------------------------------------------------
+    * [Ports, TCP & UDP Protocols (English)](./Seviye-1_Temeller/networking/Ports-TCP-and-UDP-Protocols.md)
+    * [Port Kavramı, TCP ve UDP Protokolleri (Türkçe)](./Seviye-1_Temeller/networking/Ports-TCP-and-UDP-Protocols-TR.md)
+    ------------------------------------------------------------------------------------------------------------------------
       *   *Subnetting & Routing Analysis (Coming Soon...)*
 
 *   **Linux Foundations & Hardening**
