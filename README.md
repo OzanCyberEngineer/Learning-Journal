@@ -31,7 +31,9 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [Ports, TCP & UDP Protocols (English)](./Seviye-1_Temeller/networking/Ports-TCP-and-UDP-Protocols.md)
     * [Port Kavramı, TCP ve UDP Protokolleri (Türkçe)](./Seviye-1_Temeller/networking/Ports-TCP-and-UDP-Protocols-TR.md)
     ------------------------------------------------------------------------------------------------------------------------
-      *   *Subnetting & Routing Analysis (Coming Soon...)*
+    * [How the Internet Works: A Web Request Journey (English)](./Seviye-1_Temeller/networking/How-the-Internet-Works-A-Web-Request-Journey.md)
+    * [İnternet Nasıl Çalışır: Bir Web İsteğinin Yolculuğu (Türkçe)](./Seviye-1_Temeller/networking/How-the-Internet-Works-A-Web-Request-Journey-TR.md)
+   ------------------------------------------------------------------------------------------------------------------------  
 
 *   **Linux Foundations & Hardening**
     *   *Linux Filesystem & Permissions (Coming Soon...)*
