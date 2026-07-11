@@ -40,7 +40,10 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [Linux File & Directory Operations (English)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations.md)
     * [Linux Dosya ve Klasör Operasyonları (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations-TR.md)
   --------------------------------------------------------------------------------------------------------------------------
-    * *Linux Permissions & SUID Vulnerabilities (Coming Soon...)*
+    * [Linux Pipe & Grep Filters (English)](./Seviye-1_Temeller/linux/Linux-Pipe-and-Grep-Filters.md)
+    * [Linux Boru Hattı ve Grep Filtreleri (Türkçe)](./Seviye-1_Temeller/linux/Linux-Pipe-and-Grep-Filters-TR.md)
+  --------------------------------------------------------------------------------------------------------------------------
+    *Linux Permissions & SUID Vulnerabilities (Coming Soon...)*
     * *SSH Server Hardening Report (Coming Soon...)*
 
 *   **Windows & Active Directory**
