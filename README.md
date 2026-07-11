@@ -36,8 +36,15 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
    ------------------------------------------------------------------------------------------------------------------------  
 
 *   **Linux/GUI**
-*   
 
+*
+
+   * [Linux File System & Navigation (English)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation.md)
+   * [Linux Dosya Sistemi ve Navigasyon (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation-TR.md)
+   ------------------------------------------------------------------------------------------------------------------------
+
+*
+----------------------------------------------------------------------------------------------------------------------------
 *   **Linux Foundations & Hardening**
     *   *Linux Filesystem & Permissions (Coming Soon...)*
     *   *SSH Hardening Report (Coming Soon...)*
