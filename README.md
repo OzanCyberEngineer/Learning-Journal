@@ -35,20 +35,15 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [İnternet Nasıl Çalışır: Bir Web İsteğinin Yolculuğu (Türkçe)](./Seviye-1_Temeller/networking/How-the-Internet-Works-A-Web-Request-Journey-TR.md)
    ------------------------------------------------------------------------------------------------------------------------  
 
-*   **Linux/GUI**
-
-*
-     * [Linux File System & Navigation (English)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation.md)
-     * [Linux Dosya Sistemi ve Navigasyon (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation-TR.md)
-   ------------------------------------------------------------------------------------------------------------------------      * [Linux File & Directory Operations (English)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations.md)
-     * [Linux Dosya ve Klasör Operasyonları (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations-TR.md)
-   ------------------------------------------------------------------------------------------------------------------------
-
-
-----------------------------------------------------------------------------------------------------------------------------
-*   **Linux Foundations & Hardening**
-    *   *Linux Filesystem & Permissions (Coming Soon...)*
-    *   *SSH Hardening Report (Coming Soon...)*
+* **Linux Foundations & Hardening**
+    * [Linux File System & Navigation (English)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation.md)
+    * [Linux Dosya Sistemi ve Navigasyon (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation-TR.md)
+  --------------------------------------------------------------------------------------------------------------------------
+    * [Linux File & Directory Operations (English)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations.md)
+    * [Linux Dosya ve Klasör Operasyonları (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations-TR.md)
+  --------------------------------------------------------------------------------------------------------------------------
+    * *Linux Permissions & SUID Vulnerabilities (Coming Soon...)*
+    * *SSH Server Hardening Report (Coming Soon...)*
 
 *   **Windows & Active Directory**
     *   *Domain Controller Setup & Sysmon Logging (Coming Soon...)*
