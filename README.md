@@ -40,6 +40,8 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
 *
      * [Linux File System & Navigation (English)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation.md)
      * [Linux Dosya Sistemi ve Navigasyon (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-System-and-Navigation-TR.md)
+   ------------------------------------------------------------------------------------------------------------------------      * [Linux File & Directory Operations (English)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations.md)
+     * [Linux Dosya ve Klasör Operasyonları (Türkçe)](./Seviye-1_Temeller/linux/Linux-File-and-Directory-Operations-TR.md)
    ------------------------------------------------------------------------------------------------------------------------
 
 
