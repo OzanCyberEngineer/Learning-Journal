@@ -35,6 +35,8 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [İnternet Nasıl Çalışır: Bir Web İsteğinin Yolculuğu (Türkçe)](./Seviye-1_Temeller/networking/How-the-Internet-Works-A-Web-Request-Journey-TR.md)
    ------------------------------------------------------------------------------------------------------------------------  
 
+   *   **Linux/GUI**
+
 *   **Linux Foundations & Hardening**
     *   *Linux Filesystem & Permissions (Coming Soon...)*
     *   *SSH Hardening Report (Coming Soon...)*
