@@ -46,6 +46,9 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
     * [Linux Permissions & Privilege Escalation (English)](./Seviye-1_Temeller/linux/Linux-Permissions-and-Privilege-Escalation.md)
     * [Linux Yetki Mantığı ve Yetki Yükseltme (Türkçe)](./Seviye-1_Temeller/linux/Linux-Permissions-and-Privilege-Escalation-TR.md)
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    * [Linux Processes & Signal Management (English)](./Seviye-1_Temeller/linux/Linux-Processes-and-Signal-Management.md)
+    * [Linux Süreç ve Sinyal Yönetimi (Türkçe)](./Seviye-1_Temeller/linux/Linux-Processes-and-Signal-Management-TR.md)
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     *Linux Permissions & SUID Vulnerabilities (Coming Soon...)*
     * *SSH Server Hardening Report (Coming Soon...)*
 
