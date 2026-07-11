@@ -36,6 +36,7 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
    ------------------------------------------------------------------------------------------------------------------------  
 
 *   **Linux/GUI**
+*   
 
 *   **Linux Foundations & Hardening**
     *   *Linux Filesystem & Permissions (Coming Soon...)*
