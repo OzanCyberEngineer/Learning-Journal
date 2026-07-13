@@ -8,7 +8,19 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
 
 ## 📌 Contents & Roadmap
 
-### 🌐 Level 1: Computer Engineering & System Foundations
+🌐 [Modül 01: Networking Foundations](./Seviye-1_Temeller/networking) 
+
+🐧 Modül 02: Linux System Administration 
+
+🛡️ Modül 03: CyberSecurity & Incident Management 
+
+📦 Modül 04: Container Technologies & Kubernetes 
+
+🔄 Modül 05: Infrastructure as Code & CI/CD 
+
+🐍 Modül 06: Automation & Scripting (Bash/Python) 
+
+☁️ Modül 07: Infrastructure Monitoring & Cloud 
 
 *   **Networking Labs & Analysis**
     *   [OSI Model & Encapsulation (English)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation.md)
