@@ -1,5 +1,5 @@
 *   **Networking Labs & Analysis**
-    *   [OSI Model & Encapsulation (English)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation.md)
+    *   [OSI Model & Encapsulation (English)](networking/OSI-Model-and-Encapsulation.md)
     *   [OSI Modeli ve Kapsülleme (Türkçe)](./Seviye-1_Temeller/networking/OSI-Model-and-Encapsulation-TR.md)
     --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     *   [MAC Address & Ethernet Basics (English)](./Seviye-1_Temeller/networking/MAC-Address-and-Ethernet-Basics.md)
