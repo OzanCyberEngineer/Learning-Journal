@@ -8,7 +8,7 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
 
 ## 📌 Contents & Roadmap
 
-🌐 [Modül 01: Networking Foundations](./Seviye-1_Temeller/networking/Readme.md) 
+🌐 [Modül 01: Networking Foundations](./Seviye-1_Temeller/README.md) 
 
 🐧 Modül 02: Linux System Administration 
 
