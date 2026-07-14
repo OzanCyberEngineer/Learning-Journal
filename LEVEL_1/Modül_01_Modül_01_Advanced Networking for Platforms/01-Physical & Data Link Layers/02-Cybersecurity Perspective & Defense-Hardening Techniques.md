@@ -21,9 +21,9 @@ Many corporate environments use "MAC-Based Authentication" (MAB) or static IP as
 
 
 🛡️ Defense / Hardening Techniques (802.1X Authentication):
-You should never trust MAC addresses alone, as they are very easy to spoof. Instead, integrate 802.1X (RADIUS/TACACS+) authentication. When a device plugs in a cable, it must authenticate using a username/password or a digital certificate. The switch will not allow data traffic on the port until authentication succeeds
+You should never trust MAC addresses alone, as they are very easy to spoof. Instead, integrate 802.1X (RADIUS/TACACS+) authentication. When a device plugs in a cable, it must authenticate using a username/password or a digital certificate. The switch will not allow data traffic on the port until authentication succeeds.
 ---
-##🚀 Section 6: MTU and "Dark" Network Issues in Modern System Architecture:
+🚀 Section 6: MTU and "Dark" Network Issues in Modern System Architecture:
 * [ Standard Packet: 1500 Byte ] ---> (Passes Successfully ✅)
 * [ Tunnel Packet (VXLAN): 1550 Byte ]
 * ---> [ MTU: 1500 Limit ] --->
