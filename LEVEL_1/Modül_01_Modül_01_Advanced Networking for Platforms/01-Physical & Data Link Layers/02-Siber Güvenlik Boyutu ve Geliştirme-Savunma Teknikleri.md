@@ -23,9 +23,8 @@ Saldırgan, switch'e bağlı bir porttan saniyeler içinde binlerce sahte kaynak
 Ağa bağlanırken sadece MAC adresine güvenilmemelidir. 802.1X (RADIUS/TACACS+) protokolü altyapıya entegre edilerek, cihaz kabloyu taktığı an kullanıcı adı/şifre veya dijital sertifika ile kimlik doğrulaması yapmaya zorlanmalıdır. Kimlik doğrulamadan geçemeyen cihazın portuna switch elektrik vermez.
 
 ---
-🚀 Bölüm 6: Modern Sistem Mimarisinde MTU ve "Karanlık" Ağ Sorunları
-[ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)
-[ Tünellenmiş Paket (VXLAN): 1550 Byte ] ---> [ MTU: 1500 Limit ] ---> (Paket Drop / Parçalanma Kriz ❌)
+🚀 Bölüm 6: Modern Sistem Mimarisinde MTU ve "Karanlık" Ağ Sorunları: 
+[ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)[ Tünellenmiş Paket (VXLAN): 1550 Byte ] ---> [ MTU: 1500 Limit ] ---> (Paket Drop / Parçalanma Kriz ❌)
 
 ⚠️ MTU Black Hole (Kara Delik) Nedir?
 Eğer senin fiziksel ağındaki (Underlay) switch'lerin MTU sınırı hala 1500 byte ise, bu tünel paketleri kapılardan geçemez. Router'lar paketleri parçalamaya çalışır, parçalanamayan paketler ise doğrudan drop edilir.
