@@ -31,8 +31,6 @@ Saldırı Sonucu: Switch ve DHCP sunucusu, saldırganı o şirketin yetkili yön
 Ağa bağlanırken sadece MAC adresine güvenilmemelidir. 802.1X (RADIUS/TACACS+) protokolü altyapıya entegre edilerek, cihaz kabloyu taktığı an kullanıcı adı/şifre veya dijital sertifika ile kimlik doğrulaması yapmaya zorlanmalıdır. Kimlik doğrulamadan geçemeyen cihazın portuna switch elektrik vermez.
 
 🚀 Bölüm 6: Modern Sistem Mimarisinde MTU ve "Karanlık" Ağ Sorunları
-Bir DevOps veya Platform Mühendisi olarak en çok karşılaşacağın sorunlardan biri, tünelleme (encapsulation) teknolojileridir.
-
 [ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)
 [ Tünellenmiş Paket (VXLAN): 1550 Byte ] ---> [ MTU: 1500 Limit ] ---> (Paket Drop / Parçalanma Kriz ❌)
 ⚠️ MTU Black Hole (Kara Delik) Nedir?
