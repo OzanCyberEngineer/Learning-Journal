@@ -19,7 +19,7 @@ An attacker sends thousands of packets with fake source MAC addresses to a singl
 ### 2. MAC Spoofing (Identity Theft)
 Many corporate environments use "MAC-Based Authentication" (MAB) or static IP assignments to authorize devices. An attacker copies the MAC address of an authorized target device (like an administrator's laptop) onto their own network card:
 
-```bash
+
 ip link set dev eth0 down
 ip link set dev eth0 address AA:BB:CC:DD:EE:FF
 ip link set dev eth0 up
