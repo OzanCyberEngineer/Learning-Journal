@@ -24,10 +24,10 @@ Ağa bağlanırken sadece MAC adresine güvenilmemelidir. 802.1X (RADIUS/TACACS+
 
 ---
 🚀 Bölüm 6: Modern Sistem Mimarisinde MTU ve "Karanlık" Ağ Sorunları: 
-[ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)
-[ Tünellenmiş Paket (VXLAN): 1550 Byte ] 
----> [ MTU: 1500 Limit ] ---> 
-(Paket Drop / Parçalanma Kriz ❌)
+* [ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)
+* [ Tünellenmiş Paket (VXLAN): 1550 Byte ] 
+* ---> [ MTU: 1500 Limit ] ---> 
+* (Paket Drop / Parçalanma Kriz ❌)
 
 ⚠️ MTU Black Hole (Kara Delik) Nedir?
 Eğer senin fiziksel ağındaki (Underlay) switch'lerin MTU sınırı hala 1500 byte ise, bu tünel paketleri kapılardan geçemez. Router'lar paketleri parçalamaya çalışır, parçalanamayan paketler ise doğrudan drop edilir.
