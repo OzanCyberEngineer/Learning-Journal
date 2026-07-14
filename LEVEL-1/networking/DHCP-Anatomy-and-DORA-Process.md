@@ -6,12 +6,12 @@ A technical overview of how network devices automatically acquire IP addresses, 
 
 The automatic IP assignment mechanism operates through a structured four-step communication protocol between the client and the DHCP server:
 Note over Client: No IP Assigned (0.0.0.0)
-    Client->>Server: DHCPDISCOVER (L2/L3 Broadcast)
-    Note over Server: Selects Available IP
-    Server-->>Client: DHCPOFFER (Unicast / Broadcast)
-    Client->>Server: DHCPREQUEST (Broadcast)
-    Server-->>Client: DHCPACK (Unicast / Broadcast)
-    Note over Client: IP Officially Bound
+    * Client->>Server: DHCPDISCOVER (L2/L3 Broadcast)
+    * Note over Server: Selects Available IP
+    * Server-->>Client: DHCPOFFER (Unicast / Broadcast)
+    * Client->>Server: DHCPREQUEST (Broadcast)
+    * Server-->>Client: DHCPACK (Unicast / Broadcast)
+    * Note over Client: IP Officially Bound
 ---
 ##🔍 2. Step-by-Step Operational Mechanics
 
