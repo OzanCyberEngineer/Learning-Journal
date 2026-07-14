@@ -19,7 +19,7 @@ Saldırgan, switch'e bağlı bir porttan saniyeler içinde binlerce sahte kaynak
 ### 2. MAC Spoofing (Kimlik Hırsızlığı)
 Şirket ağlarında genellikle "MAC tabanlı kimlik doğrulama" (MAB) veya statik IP atamaları kullanılır. Saldırgan, hedef aldığı bir yöneticinin bilgisayarının MAC adresini kendi ağ kartına kopyalar:
 
-```bash
+
 ip link set dev eth0 down
 ip link set dev eth0 address AA:BB:CC:DD:EE:FF
 ip link set dev eth0 up
