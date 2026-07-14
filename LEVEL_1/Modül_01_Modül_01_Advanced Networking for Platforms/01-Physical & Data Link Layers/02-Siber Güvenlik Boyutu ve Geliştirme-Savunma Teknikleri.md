@@ -18,25 +18,20 @@ Saldırgan, switch'e bağlı bir porttan saniyeler içinde binlerce sahte kaynak
 
 ### 2. MAC Spoofing (Kimlik Hırsızlığı)
 Şirket ağlarında genellikle "MAC tabanlı kimlik doğrulama" (MAB) veya statik IP atamaları kullanılır. Saldırgan, hedef aldığı bir yöneticinin bilgisayarının MAC adresini kendi ağ kartına kopyalar:
-
-
-ip link set dev eth0 down
-ip link set dev eth0 address AA:BB:CC:DD:EE:FF
-ip link set dev eth0 up
-
-
-Saldırı Sonucu: Switch ve DHCP sunucusu, saldırganı o şirketin yetkili yöneticisi sanarak ağa dahil eder ve tüm yetkileri verir.
+---
 
 🛡️ Savunma / Geliştirme Teknikleri (802.1X Kimlik Doğrulama):
 Ağa bağlanırken sadece MAC adresine güvenilmemelidir. 802.1X (RADIUS/TACACS+) protokolü altyapıya entegre edilerek, cihaz kabloyu taktığı an kullanıcı adı/şifre veya dijital sertifika ile kimlik doğrulaması yapmaya zorlanmalıdır. Kimlik doğrulamadan geçemeyen cihazın portuna switch elektrik vermez.
+---
 
 🚀 Bölüm 6: Modern Sistem Mimarisinde MTU ve "Karanlık" Ağ Sorunları
 [ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)
 [ Tünellenmiş Paket (VXLAN): 1550 Byte ] ---> [ MTU: 1500 Limit ] ---> (Paket Drop / Parçalanma Kriz ❌)
+---
 ⚠️ MTU Black Hole (Kara Delik) Nedir?
 Eğer senin fiziksel ağındaki (Underlay) switch'lerin MTU sınırı hala 1500 byte ise, bu tünel paketleri kapılardan geçemez. Router'lar paketleri parçalamaya çalışır, parçalanamayan paketler ise doğrudan drop edilir.
 
 Kullanıcı sistemi açtığında web sitesinin yarısının yüklendiğini, büyük dosyaların (Örn: Docker imajları push edilirken) yarıda kilitlendiğini görür ama küçük paketler (Ping gibi) sorunsuz çalışır. Buna ağ dünyasında MTU Black Hole (Kara Delik) denir.
-
+---
 💡 Mimari Çözüm: Jumbo Frames
 Modern veri merkezlerinde ve bulut altyapılarında bu sorunun önüne geçmek için fiziksel switch ve sunucuların MTU değeri varsayılan 1500'den 9000 Byte (Jumbo Frames) seviyesine yükseltilir. Böylece araya tünel başlıkları girse bile paketler asla parçalanmadan, tek parça halinde ve ışık hızında iletilir.
