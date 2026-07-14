@@ -19,8 +19,7 @@ An attacker sends thousands of packets with fake source MAC addresses to a singl
 ### 2. MAC Spoofing (Identity Theft)
 Many corporate environments use "MAC-Based Authentication" (MAB) or static IP assignments to authorize devices. An attacker copies the MAC address of an authorized target device (like an administrator's laptop) onto their own network card:
 
-
-🛡️ Defense / Hardening Techniques (802.1X Authentication):
+* 🛡️ Defense / Hardening Techniques (802.1X Authentication):
 You should never trust MAC addresses alone, as they are very easy to spoof. Instead, integrate 802.1X (RADIUS/TACACS+) authentication. When a device plugs in a cable, it must authenticate using a username/password or a digital certificate. The switch will not allow data traffic on the port until authentication succeeds.
 ---
 🚀 Section 6: MTU and "Dark" Network Issues in Modern System Architecture:
