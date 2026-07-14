@@ -36,7 +36,7 @@ Command & Control (C2): Establishing a secure communication channel between the 
 
 Actions on Objectives : Executing the final goal—whether it is data exfiltration (stealing intellectual property), logic sabotage, or launching ransomware.
 
-🚨 3. Defensive Perspective & Incident Management
+## 🚨 3. Defensive Perspective & Incident Management
 Defensive engineering aims to break the Cyber Kill Chain as early as possible. The sooner the chain is disrupted, the lower the operational and financial impact.
 
 What is an Incident? Any anomalous event that threatens the confidentiality, integrity, or availability (CIA Triad) of an organization's assets (e.g., a single user account failing authentication 100 times within 1 minute at 03:00 AM).
