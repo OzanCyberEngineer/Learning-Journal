@@ -20,17 +20,15 @@ An attacker sends thousands of packets with fake source MAC addresses to a singl
 Many corporate environments use "MAC-Based Authentication" (MAB) or static IP assignments to authorize devices. An attacker copies the MAC address of an authorized target device (like an administrator's laptop) onto their own network card:
 
 
-ip link set dev eth0 down
-ip link set dev eth0 address AA:BB:CC:DD:EE:FF
-ip link set dev eth0 up
-The Result: The switch and DHCP server mistake the attacker for the authorized corporate user and grant them full network access and privileges.
-
 🛡️ Defense / Hardening Techniques (802.1X Authentication):
 You should never trust MAC addresses alone, as they are very easy to spoof. Instead, integrate 802.1X (RADIUS/TACACS+) authentication. When a device plugs in a cable, it must authenticate using a username/password or a digital certificate. The switch will not allow data traffic on the port until authentication succeeds
 
-🚀 Section 6: MTU and "Dark" Network Issues in Modern System Architecture
-[ Standard Packet: 1500 Byte ] ---> (Passes Successfully ✅)
-[ Tunnel Packet (VXLAN): 1550 Byte ] ---> [ MTU: 1500 Limit ] ---> (Packet Drop / Fragmentation Issues ❌)
+🚀 Section 6: MTU and "Dark" Network Issues in Modern System Architecture:
+* [ Standard Packet: 1500 Byte ] ---> (Passes Successfully ✅)
+* [ Tunnel Packet (VXLAN): 1550 Byte ]
+* ---> [ MTU: 1500 Limit ] --->
+* (Packet Drop / Fragmentation Issues ❌)
+  
 ⚠️ What is an MTU Black Hole?
 If the physical switches in your underlay network are still configured with the default 1500-byte MTU, these large encapsulated packets cannot pass. Routers will try to fragment them, and if they cannot, the packets are dropped.
 
