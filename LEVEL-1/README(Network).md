@@ -1,5 +1,4 @@
-## <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/0f2187e4-f827-4f8b-b52f-235fe2413595" />
-Networking Labs & Analysis
+🌐## Networking Labs & Analysis
 ---
 * [OSI Model & Encapsulation (English)](networking/OSI-Model-and-Encapsulation.md)
 * [OSI Modeli ve Kapsülleme (Türkçe)](networking/OSI-Model-and-Encapsulation-TR.md)
