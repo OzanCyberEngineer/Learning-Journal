@@ -9,6 +9,7 @@ A technical overview of how network devices automatically acquire IP addresses, 
 The automatic IP assignment mechanism operates through a structured four-step communication protocol between the client and the DHCP server:
 
 
+   
    Client                                    DHCP Server
      │                                             │
      │ ─── 1. DHCPDISCOVER (Broadcast - L2/L3) ──> │
