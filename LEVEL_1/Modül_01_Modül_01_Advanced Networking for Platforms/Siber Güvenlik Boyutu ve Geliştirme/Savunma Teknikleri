@@ -31,8 +31,6 @@ Ağa bağlanırken sadece MAC adresine güvenilmemelidir. 802.1X (RADIUS/TACACS+
 🚀 Bölüm 6: Modern Sistem Mimarisinde MTU ve "Karanlık" Ağ Sorunları
 Bir DevOps veya Platform Mühendisi olarak en çok karşılaşacağın sorunlardan biri, tünelleme (encapsulation) teknolojileridir.
 
-Gelecekte işleyeceğimiz VXLAN, IPsec VPN veya GRE Tunnel gibi teknolojiler, mevcut paketin üzerine ekstra kendi başlıklarını (Header) eklerler. Örneğin standart bir paket 1500 byte ise, üzerine VXLAN başlığı bindiğinde paket 1550 Byte olur.
-
 [ Standart Paket: 1500 Byte ] ---> (Geçiş Başarılı ✅)
 [ Tünellenmiş Paket (VXLAN): 1550 Byte ] ---> [ MTU: 1500 Limit ] ---> (Paket Drop / Parçalanma Kriz ❌)
 ⚠️ MTU Black Hole (Kara Delik) Nedir?
