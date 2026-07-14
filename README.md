@@ -12,7 +12,7 @@ My goal is to showcase not just what I learn, but how I analyze technologies and
 
 🐧 [Modül 02: Linux System Administration](./LEVEL-1/README(Linux).md) 
 
-🛡️ [Modül 03: CyberSecurity & Incident Management](./LEVEL-1/README(CyberThreat).md) 
+🛡️ [Modül 03: CyberSecurity & Incident Management](./LEVEL-1/README(cyber_thread).md) 
 
 📦 Modül 04: Container Technologies & Kubernetes 
 
