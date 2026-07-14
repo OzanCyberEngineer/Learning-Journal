@@ -35,6 +35,7 @@ Installation : Establishing persistence within the target system by deploying ba
 Command & Control (C2): Establishing a secure communication channel between the compromised asset and the attacker’s external command server to remotely manipulate the host.
 
 Actions on Objectives : Executing the final goal—whether it is data exfiltration (stealing intellectual property), logic sabotage, or launching ransomware.
+---
 
 ## 🚨 3. Defensive Perspective & Incident Management
 Defensive engineering aims to break the Cyber Kill Chain as early as possible. The sooner the chain is disrupted, the lower the operational and financial impact.
@@ -48,3 +49,4 @@ Containment (Isolation): Immediately severing network access of the compromised 
 Investigation (Root Cause Analysis): Analyzing system logs (such as /var/log in Linux, Windows Event Logs, and firewall events) to trace the entry point of the adversary.
 
 Eradication & Recovery: Patching the exploited vulnerability, removing malware artifacts, resetting credentials, and safely restoring operations from secure backups.
+---
