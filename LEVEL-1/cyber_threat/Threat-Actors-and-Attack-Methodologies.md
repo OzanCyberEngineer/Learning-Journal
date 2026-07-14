@@ -19,21 +19,22 @@ In the cyber realm, adversaries are not uniform. They are categorized based on t
 
 An elite adversary, especially an APT, never attacks randomly. They follow structured frameworks to ensure success. The industry-standard **Lockheed Martin Cyber Kill Chain** outlines this 7-step offensive lifecycle:
 
-```text
+
 [Recon] ➔ [Weaponize] ➔ [Deliver] ➔ [Exploit] ➔ [Install] ➔ [C2] ➔ [Actions]
-Reconnaissance (Keşif): Gathering intelligence on the target. This includes scanning open ports, mapping active subnets, harvesting corporate emails, and identifying technology stacks.
 
-Weaponization (Silahlandırma): Coupling an exploit payload with a delivery mechanism (e.g., embedding a malicious macro into a PDF or creating a custom Trojan).
+Reconnaissance : Gathering intelligence on the target. This includes scanning open ports, mapping active subnets, harvesting corporate emails, and identifying technology stacks.
 
-Delivery (İletim): Transmitting the weaponized payload to the target environment via phishing emails, infected USB drives, or watering-hole websites.
+Weaponization : Coupling an exploit payload with a delivery mechanism (e.g., embedding a malicious macro into a PDF or creating a custom Trojan).
 
-Exploitation (Sızma/İstismar): Triggering the malicious payload by exploiting unpatched software vulnerabilities, misconfigurations, or human elements.
+Delivery : Transmitting the weaponized payload to the target environment via phishing emails, infected USB drives, or watering-hole websites.
 
-Installation (Kurulum): Establishing persistence within the target system by deploying backdoors, web shells, or modifying registry keys.
+Exploitation : Triggering the malicious payload by exploiting unpatched software vulnerabilities, misconfigurations, or human elements.
+
+Installation : Establishing persistence within the target system by deploying backdoors, web shells, or modifying registry keys.
 
 Command & Control (C2): Establishing a secure communication channel between the compromised asset and the attacker’s external command server to remotely manipulate the host.
 
-Actions on Objectives (Hedefe Ulaşma): Executing the final goal—whether it is data exfiltration (stealing intellectual property), logic sabotage, or launching ransomware.
+Actions on Objectives : Executing the final goal—whether it is data exfiltration (stealing intellectual property), logic sabotage, or launching ransomware.
 
 🚨 3. Defensive Perspective & Incident Management
 Defensive engineering aims to break the Cyber Kill Chain as early as possible. The sooner the chain is disrupted, the lower the operational and financial impact.
