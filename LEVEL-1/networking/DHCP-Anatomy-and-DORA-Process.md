@@ -1,25 +1,17 @@
 # 🌐 DHCP Anatomy & The DORA Process
 
 A technical overview of how network devices automatically acquire IP addresses, subnet masks, default gateways, and DNS server configurations through the four-step DORA handshake.
-
 ---
-
 ## 🏢 1. The DORA Handshake Schema
 
 The automatic IP assignment mechanism operates through a structured four-step communication protocol between the client and the DHCP server:
-
-
-   
-   Client                                    DHCP Server
-     │                                             │
-     │ ─── 1. DHCPDISCOVER (Broadcast - L2/L3) ──> │
-     │                                             │
-     │ <── 2. DHCPOFFER (Unicast / Broadcast) ──── │
-     │                                             │
-     │ ─── 3. DHCPREQUEST (Broadcast) ───────────> │
-     │                                             │
-     │ <── 4. DHCPACK (Unicast / Broadcast) ────── │
-     │                                             │
+Note over Client: No IP Assigned (0.0.0.0)
+    Client->>Server: DHCPDISCOVER (L2/L3 Broadcast)
+    Note over Server: Selects Available IP
+    Server-->>Client: DHCPOFFER (Unicast / Broadcast)
+    Client->>Server: DHCPREQUEST (Broadcast)
+    Server-->>Client: DHCPACK (Unicast / Broadcast)
+    Note over Client: IP Officially Bound
 ---
 ##🔍 2. Step-by-Step Operational Mechanics
 
