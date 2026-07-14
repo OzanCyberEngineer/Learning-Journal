@@ -15,8 +15,8 @@
 * [VXLAN-and-Overlay-Networks (English)](networking/VXLAN-and-Overlay-Networks.md)
 * [VXLAN-and-Overlay-Networks (Türkçe)](networking/VXLAN-ve-Overlay-Aglar.md)
 ---
-* [VLAN-Anatomy (English)](networking/VLAN-Anatomy.md)
-* [VLAN-Anatomy (Türkçe)](networking/VLAN-Anatomy-TR.md)
+* [VLAN-VXLAN-Security-and-Vulnerabilities (English)](networking/VLAN-VXLAN-Security-and-Vulnerabilities.md)
+* [VLAN-VXLAN-Guvenlik-ve-Zafiyetler (Türkçe)](networking/VLAN-VXLAN-Guvenlik-ve-Zafiyetler.md)
 ---
 * [IPv4 Concepts & Subnetting (English)](networking/IPv4-Concepts-and-Subnetting.md)
 * [IPv4 Mimarisi ve Alt Ağlara Bölme (Türkçe)](networking/IPv4-Concepts-and-Subnetting-TR.md)
