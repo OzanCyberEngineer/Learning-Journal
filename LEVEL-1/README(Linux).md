@@ -1,6 +1,5 @@
 ## Linux Foundations & Hardening
-*
-*
+---
 * [Linux File System & Navigation (English)](linux/Linux-File-System-and-Navigation.md)
  * [Linux Dosya Sistemi ve Navigasyon (Türkçe)](linux/Linux-File-System-and-Navigation-TR.md)
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
