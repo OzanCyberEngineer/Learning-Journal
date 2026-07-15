@@ -1,5 +1,10 @@
 # 🏆 Systems, DevOps & Platform Engineering Learning Roadmap
+## EN
+This repository is an ongoing learning log and practical roadmap I have created to build a strong technical foundation in system administration, network technologies, cybersecurity, DevOps, SRE, and platform engineering.
 
+The roadmap comprises theoretical documentation, a security-focused perspective, hands-on exercises, and comprehensive portfolio projects that are developed as one progresses through the levels. The content is prepared in both Turkish and English and is regularly updated throughout the learning journey.
+---
+## TR
 Bu depo; sistem yönetimi, ağ teknolojileri, siber güvenlik, DevOps, SRE ve platform mühendisliği alanlarında güçlü bir teknik temel oluşturmak amacıyla hazırladığım, devam eden bir öğrenme günlüğü ve uygulama yol haritasıdır.
 
 Yol haritası; teorik dokümantasyon, güvenlik perspektifi, uygulamalı çalışmalar ve seviyeler ilerledikçe geliştirilecek kapsamlı portföy projelerinden oluşmaktadır. İçerikler Türkçe ve İngilizce olarak hazırlanmakta ve öğrenme süreci boyunca düzenli olarak güncellenmektedir.
