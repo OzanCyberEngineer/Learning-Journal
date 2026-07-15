@@ -237,9 +237,9 @@ Application code is validated through CI security controls, packaged as containe
 
 ## 📝 Documentation Approach
 
-Her tamamlanan konu; ihtiyaca göre Türkçe ve İngilizce teknik dokümantasyon, güvenlik riskleri, hardening notları, komut örnekleri, yapılandırmalar, diyagramlar ve uygulamalı doğrulama adımları içerebilir.
+Each completed topic may include—depending on requirements—technical documentation in Turkish and English, safety risks, hardening notes, command examples, configurations, diagrams, and practical verification steps.
 
-Her konu için ayrı bir laboratuvar projesi oluşturulması hedeflenmemektedir. Küçük uygulamalar konunun anlaşılmasına katkı sağladığı yerlerde eklenecek; daha kapsamlı uygulamalar ise milestone portföy projelerinde bir araya getirilecektir.
+The aim is not to create a separate laboratory project for every topic. Small exercises will be included where they aid understanding, while more comprehensive applications will be consolidated into milestone portfolio projects.
 
 ---
 
