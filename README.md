@@ -108,3 +108,74 @@ Bu depo, sıfırdan başlayarak küresel standartlarda (SRE, DevOps, Platform M�
 * [ ] **Post-Mortem & Incident Blameless Culture:** Sistem çöküşlerinden sonra suçsuz raporlama standartları ve kök neden analizleri.
 * [ ] **Disaster Recovery (DR):** RTO (Recovery Time Objective) ve RPO (Recovery Point Objective) hesaplama, Backup & Restore stratejileri.
 * [ ] **High Availability (HA) Architectures:** Multi-AZ (Bölge), Multi-Region deployment mimarileri.
+---
+
+## 🏆 SECTION 2: MILESTONE PORTFOLIO PROJECTS
+
+The following three production-grade projects will be built on AWS to validate the skills acquired at the end of each major milestone.
+
+---
+
+### 🛡️ PROJECT 1: Hardened & Audited Private Linux Server Infrastructure
+> **Focus:** Host Hardening, Stateful Firewalling, Auditing, and Intrusion Prevention  
+> **Timeline:** *At the end of Level 1 (Module 03).*
+
+#### 📌 Overview
+An AWS EC2 instance running Ubuntu/Debian configured as a hardened host. Designed to deflect unauthorized authentication attempts, actively drop unapproved networking frames, and record all shell-level transactions to immutable logs.
+
+#### 🛠️ Core Technology Stack
+* **OS:** Ubuntu 22.04 LTS (AWS EC2)
+* **Firewalling:** `iptables` / `nftables`
+* **IPS Engine:** `Fail2Ban`
+* **Audit System:** Linux Kernel `Auditd`
+* **Shell Layer:** Bash (Automated reporting scripts)
+
+#### 📐 Security Architectures Defined
+* **Zero-Trust Input Rules:** Blocks all unsolicited entry points. The packet filter is configured to only allow port 22 (restricted management subnet) and port 443 (application runtime).
+* **SSHD Tightening:** Root login is explicitly set to `no`. Password validation is deactivated in favor of Ed25519 cryptographic public keys.
+* **Active Intrusion Defusal:** `Fail2Ban` reads local syslog authentication failures. IP addresses exhibiting sequential failure logs (over 3 retries) are dynamically banned for 1 hour at the kernel firewall level.
+* **Immutable Auditing:** Custom audit configurations monitor the system's runtime critical assets, specifically target logging write events to `/etc/shadow` and execution events triggered by sudo actions.
+
+---
+
+### 📦 PROJECT 2: Declarative Provisioning of Production-Ready Kubernetes
+> **Focus:** Cloud Provisioning, Infrastructure as Code, Configuration Management, and Orchestration  
+> **Timeline:** *At the end of Level 2 (Module 06).*
+
+#### 📌 Overview
+An end-to-end automation pipeline that provisions the entire cloud infrastructure on AWS and configures a multi-node, production-grade Kubernetes cluster (1 Control Plane node, 2 Worker nodes) without a single manual console action.
+
+#### 🛠️ Core Technology Stack
+* **IaC Engine:** Terraform
+* **Configuration:** Ansible
+* **Container Runtime:** `containerd`
+* **Bootstrap Engine:** `kubeadm`
+* **Cloud Infrastructure:** AWS (VPC, Subnets, EC2, S3, DynamoDB)
+
+#### 📐 Deployment Architecture Defined
+* **State-Locked Cloud (Terraform):** Deploys a customized AWS VPC with Public and Private Subnets across diverse AZs. Employs S3 for storing state variables with DynamoDB-backed concurrency control (state locking).
+* **Automated Node Prep (Ansible):** Ansible scripts connect via SSH, configuring system-level pre-requisites like loading essential kernel modules, adjusting sysctl values, and configuring the container execution engine.
+* **Bootstrap Orchestration:** Ansible automatically executes `kubeadm init` on the control plane, secures the admin configuration token, and seamlessly joins worker nodes to form the secure cluster network.
+* **Least-Privilege Isolation:** Deployments execute custom microservices packaged via secure multi-stage Dockerfiles. NetworkPolicies enforce strict pod-to-pod Layer 4 communication paths.
+
+---
+
+### 🚀 PROJECT 3: Zero-Trust, Self-Healing Global GitOps & Observability Platform
+> **Focus:** DevSecOps, Declarative CD, SRE Metriology, and Multi-AZ Fault-Tolerance  
+> **Timeline:** *At the end of Level 4 (Module 11).*
+
+#### 📌 Overview
+The final milestone project implementing a complete, automated DevOps lifecycle. Code is written locally, pushed to version control, secured dynamically, deployed declaratively, monitored proactively, and configured to self-heal in the event of component failure.
+
+#### 🛠️ Core Technology Stack
+* **CI Engine:** GitHub Actions
+* **GitOps Engine:** ArgoCD
+* **Static Analysis:** SonarQube & TruffleHog
+* **SRE Logging & Metrics:** Prometheus, Grafana, Loki
+* **Runtime Target:** Kubernetes (AWS EKS or Self-Managed Multi-Node Cluster)
+
+#### 📐 Engineering Principles Implemented
+* **DevSecOps Pipeline:** Code validation pipeline incorporating secret-leak checks via `TruffleHog`, code static analysis via `SonarQube`, and docker layer analysis via `Trivy` before ECR push.
+* **GitOps Architecture (ArgoCD):** Deploys a synchronization controller in the cluster. Changes are reconciled directly from declarative Git manifests. Manual configuration drifts are instantly overridden and reverted back to the Git source of truth.
+* **Golden Signals Observability:** Prometheus scrapes system and runtime statistics. Grafana dashboards visualize service latency, throughput, error percentages, and thread saturation.
+* **Automated Resilience:** Advanced K8s probes check the health status of active pods. If data
