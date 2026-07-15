@@ -1,10 +1,5 @@
 # 🌐 Modül 01 / Konu 04: Network Routing, Subnetting & IP Fragmentation
 
-### 🧠 1. Başkasına Anlatma Formülü (Analoji ile Mantık)
-
-Junior bir mühendis sana gelip *"Router ile Switch farkı tam olarak nedir? Neden IP adreslerini alt ağlara (subnet) bölüyoruz?"* diye sorarsa, ona şu posta kutusu hikayesini anlat:
-
----
 
 ### 🏢 Analoji: İki Farklı Mahalle ve Posta Sistemi
 
