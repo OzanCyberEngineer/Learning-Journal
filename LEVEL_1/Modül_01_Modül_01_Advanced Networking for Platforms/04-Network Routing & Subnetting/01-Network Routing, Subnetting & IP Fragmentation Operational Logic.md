@@ -1,11 +1,5 @@
 # 🌐 Module 01 / Topic 04: Network Routing, Subnetting & IP Fragmentation
 
-### 🧠 1. How to Explain It to Someone Else (Logic via Analogy)
-
-If a junior engineer ever comes up to you and asks, *"What exactly is the difference between a Router and a Switch? Why do we split IP addresses into subnets?"*, tell them this postal service story:
-
----
-
 ### 🏢 Analogy: Two Different Neighborhoods and the Postal System
 
 
