@@ -66,7 +66,8 @@ $$\text{Usable Hosts} = 2^{\text{Host Bits}} - 2$$
 
 *(For our example network: $2^8 - 2 = 254$ usable hosts)*
 ---
-###🗺️ 3. Routing Dynamics
+
+### 🗺️ 3. Routing Dynamics
 Routers utilize Routing Tables, which act like world roadmaps, to deliver packets to their destinations. When an IP packet arrives at a router, the following technical pipeline is executed:
 
 Packet Ingestion: The router strips the L2 header and inspects the Destination IP address inside the L3 header.
@@ -79,12 +80,12 @@ Example: Suppose the destination is 10.0.1.5. If the table contains both 10.0.0.
 
 Default Route (0.0.0.0/0): If the router cannot find any matching entry for the destination IP, instead of dropping the packet immediately, it forwards it to the Default Route, which serves as the gateway to the rest of the world.
 
-###💥 4. IP Fragmentation and MTU Limits
+### 💥 4. IP Fragmentation and MTU Limits
 We previously learned that the MTU (Maximum Transmission Unit) defaults to 1500 Bytes on standard ethernet networks. But what happens if a router is forced to transmit a large packet over a link with a smaller MTU capacity (such as a VPN tunnel)?
 
 This is where IP Fragmentation—the built-in scalability mechanism of Layer 3—comes into play.
 
-###⚙️ How Fragmentation Works
+### ⚙️ How Fragmentation Works
 Suppose we have a 1500-byte IP packet that must traverse a link/tunnel with an MTU limit of 1400 bytes. The router splits this packet into fragments:
 
 Fragment 1: Formatted to fit the 1400-byte limit. The More Fragments (MF) flag in its IP header is set to 1 (indicating "there are more fragments following this one"). The Fragment Offset is set to 0 because it represents the very beginning of the payload.
