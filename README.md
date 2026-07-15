@@ -35,10 +35,10 @@
 > Ağ iletişimi, işletim sistemleri, sistem yönetimi ve temel güvenlik prensiplerinde sağlam bir altyapı oluşturduğumuz seviye.
 
 #### 🌐 Modül 01: Advanced Networking for Platforms — 🚧 In Progress
-*  ✅ [**Physical & Data Link Layers:** OSI vs TCP/IP, MAC Adresi, Fiziksel Sinyaller, **MTU (Maximum Transmission Unit)** mantığı.](./LEVEL_1/Modül_01_Modül_01_Advanced%20Networking%20for%20Platforms/01-Physical%20&%20Data%20Link%20Layers)
-*  ✅ [**ARP & Yerel Ağ Dinamikleri:** ARP Protokolü, ARP Table, ARP Poisoning (Zehirlenme), **DAI (Dynamic ARP Inspection)**.](./LEVEL_1/Modül_01_Modül_01_Advanced%20Networking%20for%20Platforms/02-ARP%20&%20Yerel%20Ağ%20Dinamikleri)
-*  ✅ [**VLAN (Virtual LAN) & VXLAN:** Klasik L2 izolasyonu, VLAN Hopping / Double Tagging saldırıları, **VXLAN Overlay (Tünel) mimarisi**, VTEP ve VNI kavramları.](./LEVEL_1/Modül_01_Modül_01_Advanced%20Networking%20for%20Platforms/03-VLAN%20(Virtual%20LAN)%20&%20VXLAN)
-*  ✅ [**Network Routing & Subnetting:** IPv4 Yapısı, CIDR, Subnetting (Alt ağ hesaplama), Gateway, **IP Fragmentation (Parçalanma)**, Static vs Dynamic Routing (BGP/OSPF mantığı).](./LEVEL_1/Modül_01_Modül_01_Advanced%20Networking%20for%20Platforms/04-Network%20Routing%20&%20Subnetting)
+*  ✅ [**Physical & Data Link Layers:** OSI vs TCP/IP, MAC Adresi, Fiziksel Sinyaller, **MTU (Maximum Transmission Unit)** mantığı.]Physical%20&%20Data%20Link%20Layers)
+*  ✅ [**ARP & Yerel Ağ Dinamikleri:** ARP Protokolü, ARP Table, ARP Poisoning (Zehirlenme), **DAI (Dynamic ARP Inspection)**.]
+*  ✅ [**VLAN (Virtual LAN) & VXLAN:** Klasik L2 izolasyonu, VLAN Hopping / Double Tagging saldırıları, **VXLAN Overlay (Tünel) mimarisi**, VTEP ve VNI kavramları.]
+*  ✅ [**Network Routing & Subnetting:** IPv4 Yapısı, CIDR, Subnetting (Alt ağ hesaplama), Gateway, **IP Fragmentation (Parçalanma)**, Static vs Dynamic Routing (BGP/OSPF mantığı).]
 *  ⏳ **Transport Layer & Traffic Control:** TCP vs UDP, Portlar, TCP 3-Way Handshake, Windowing, Congestion Control (Tıkanıklık kontrolü).
 *  ⏳ **Application Layer Services:** DNS Altyapısı (A, CNAME, TXT, MX), DNS Spoofing, **DHCP & DORA Süreci, DHCP Snooping Güvenliği**, HTTP/HTTPS ve TLS/SSL Handshake detayları.
 *  ⏳ **Load Balancing & Proxy Concepts:** Forward Proxy vs. Reverse Proxy, L4 (TCP/UDP) vs. L7 (HTTP) Load Balancing mantığı, SSL Termination vs SSL Passthrough.
