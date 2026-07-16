@@ -26,7 +26,7 @@
 * Sistemdeki aktif ağ arayüzlerini ve bu arayüzlerin MTU (Maximum Transmission Unit) limitlerini incelemek amacıyla `ip a` komutu çalıştırılmıştır.
 
 
-* |ip a|
+* (ip a)
 * Yapılan incelemede, dış dünya ile iletişimi sağlayan ana arayüzün ens5 olduğu, bu arayüze 172.31.43.154/20 IP adresinin atandığı ve ağ kartının MTU değerinin standart Ethernet paket limitinin üzerinde, 9001 (Jumbo Frame) olarak yapılandırıldığı doğrulanmıştır.
 ---
 
@@ -34,7 +34,7 @@
 * Sistemin kendi alt ağı dışındaki adreslerle iletişim kurabilmesi için kullandığı varsayılan ağ geçidini (default gateway) tespit etmek amacıyla yönlendirme tablosu sorgulanmıştır.
 
 
-* ip route show default
+* (ip route show default)
 * Sorgu sonucunda, tüm harici trafiğin ens5 arayüzü üzerinden 172.31.32.1 IP adresli ağ geçidine yönlendirildiği görülmüştür.
 ---
 
@@ -42,7 +42,7 @@
 * Yerel ağdaki cihazların IP ve MAC adresi eşleşmelerini saklayan ARP önbelleğini görüntülemek için ilgili komut çalıştırılmıştır.
 
 
-* ip neigh show
+* (ip neigh show)
 * Çıktıda, varsayılan ağ geçidimiz olan 172.31.32.1 IP adresinin donanımsal MAC adresinin 06:9d:9b:ec:1c:eb olduğu ve durumunun REACHABLE (ulaşılabilir) olarak güncel tutulduğu tespit edilmiştir.
 ---
 
@@ -50,7 +50,7 @@
 * Arka planda çalışan ARP protokolünün istek ve yanıt süreçlerini yakalamak üzere tcpdump aracı kullanılmıştır.
 
 
-* sudo tcpdump -i ens5 -n arp
+* (sudo tcpdump -i ens5 -n arp)
 * Analiz sırasında, ağ geçidinin (172.31.32.1) yerel makinemizin IP adresine ait fiziksel MAC adresini sorgulamak için bir ARP isteği gönderdiği (Request who-has...), yerel makinemizin ise kendi MAC adresiyle bu isteğe anında cevap verdiği (Reply... is-at...) canlı olarak izlenmiştir.
 ---
 
@@ -60,13 +60,13 @@
 Sistemde yapılandırılan MTU limitini (9001) aşacak şekilde 8974 byte payload (veri) ve 28 byte IP/ICMP başlığı eklenerek toplamda 9002 byte boyutunda bir paket gönderilmeye çalışılmıştır:
 
 
-* ping -M do -s 8974 192.168.1.100
+* (ping -M do -s 8974 192.168.1.100)
 * Bu denemede, paket boyutu ağ kartının MTU limitini aştığı için işletim sistemi düzeyinde doğrudan hata alınmıştır.
 
 * Ağ kartının desteklediği maksimum sınır olan 9001 byte limiti göz önünde bulundurularak paket veri boyutu (payload) 9001 - 28 = 8973 byte değerine çekilmiş ve ağ geçidine başarıyla gönderilmiştir:
 
 
-* ping -M do -s 8973 172.31.32.1
+* (ping -M do -s 8973 172.31.32.1)
 * Bu komut sonucunda, paketler parçalanmaya uğramadan (0% packet loss) ağ geçidine başarıyla ulaşmış ve yanıt alınmıştır.
 ---
 ## Karşılaşılan Sorunlar ve Çözümleri
