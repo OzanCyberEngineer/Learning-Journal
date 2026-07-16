@@ -26,7 +26,7 @@
 * Sistemdeki aktif ağ arayüzlerini ve bu arayüzlerin MTU (Maximum Transmission Unit) limitlerini incelemek amacıyla `ip a` komutu çalıştırılmıştır.
 
 
-* ip a
+* |ip a|
 * Yapılan incelemede, dış dünya ile iletişimi sağlayan ana arayüzün ens5 olduğu, bu arayüze 172.31.43.154/20 IP adresinin atandığı ve ağ kartının MTU değerinin standart Ethernet paket limitinin üzerinde, 9001 (Jumbo Frame) olarak yapılandırıldığı doğrulanmıştır.
 ---
 
