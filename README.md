@@ -29,15 +29,30 @@ Yol haritası; teknik dokümantasyonlar, güvenlik odaklı değerlendirmeler, uy
 
 > Completion indicators represent the current learning progress. Direct links will be added as the corresponding topic documents are committed to the repository.
 
-## 🗺️ Learning Roadmap — Öğrenme Yol Haritası
+# 🗺️ Learning Roadmap — Öğrenme Yol Haritası
 
-### 🌐 Level 1: Foundations of Systems & Security — 🚧 In Progress
+## 🌐 Level 1: Foundations of Systems & Security — 🚧 In Progress
 
-**Sistem ve Güvenlik Temelleri**
+### Sistem, Ağ ve Güvenlik Temelleri
 
-> Ağ iletişimi, Linux sistemleri, sistem yönetimi ve temel güvenlik prensiplerinde sağlam bir teknik altyapı oluşturmayı amaçlayan seviyedir.
+Bilgisayar sistemlerinin çalışma prensipleri, ağ iletişimi, Linux sistem yönetimi ve temel güvenlik mühendisliği alanlarında sağlam bir teknik altyapı oluşturmayı amaçlayan seviyedir.
 
-#### 🌐 Module 01: Advanced Networking for Platforms — 🚧 In Progress
+---
+
+## 🖥️ Module 01: Computer Architecture & Systems Fundamentals — ⏳ Planned
+
+- ⏳ **Computer System Architecture** — CPU, çekirdekler, instruction cycle, process ve thread ilişkisi, context switching ve donanım ile işletim sistemi arasındaki etkileşim.
+- ⏳ **Kernel Space & User Space** — Kullanıcı uygulamaları, işletim sistemi çekirdeği, system calls ve privilege levels.
+- ⏳ **Memory Architecture** — RAM, cache katmanları, virtual memory, paging, page faults, swap ve memory allocation temelleri.
+- ⏳ **Processes, Threads & Concurrency** — Process isolation, threads, scheduling, synchronization, race condition ve deadlock kavramları.
+- ⏳ **Interrupts & Hardware Communication** — Interrupts, device drivers, DMA ve donanım olaylarının işletim sistemi tarafından işlenmesi.
+- ⏳ **Storage Architecture Fundamentals** — HDD, SSD, NVMe, block devices, IOPS, throughput, latency ve queue depth kavramları.
+- ⏳ **Virtualization Fundamentals** — Bare metal, hypervisors, virtual machines, hardware-assisted virtualization ve cloud altyapılarıyla ilişkisi.
+- ⏳ **Performance Observation** — CPU, memory, disk ve process davranışlarının Linux araçlarıyla temel düzeyde gözlemlenmesi.
+
+---
+
+## 🌐 Module 02: Advanced Networking for Platforms — 🚧 In Progress
 
 - ✅ **Physical & Data Link Layers** — OSI ve TCP/IP modelleri, encapsulation, fiziksel sinyaller, Ethernet frame yapısı, MAC addressing, switching, MTU, interface counters ve Layer 1/2 troubleshooting.
 - ✅ **ARP & Local Network Dynamics** — ARP çalışma mantığı, neighbor table, ARP cache durumları, gratuitous ARP, proxy ARP, ARP spoofing riskleri ve Dynamic ARP Inspection.
@@ -47,134 +62,296 @@ Yol haritası; teknik dokümantasyonlar, güvenlik odaklı değerlendirmeler, uy
 - ⏳ **Application Layer Services** — DNS kayıt türleri, DNS resolution, DNS spoofing riskleri, DHCP DORA süreci, DHCP Snooping, HTTP/HTTPS ve TLS handshake.
 - ⏳ **Load Balancing & Proxy Concepts** — Forward proxy ve reverse proxy, Layer 4 ve Layer 7 load balancing, health checks, session persistence, TLS termination ve TLS passthrough.
 
-#### 🐧 Module 02: Enterprise Linux System Administration — ⏳ Planned
+---
 
-- **Linux File System & FHS** — Linux dizin hiyerarşisi, `/etc`, `/var`, `/home`, `/opt`, `/tmp` ve sanal dosya sistemleri olan `/proc` ile `/sys`.
-- **Text & Stream Manipulation** — Standard input/output, pipes, redirection ve `grep`, `awk`, `sed`, `cut`, `sort`, `uniq` gibi araçlar.
-- **User & Permission Management** — User ve group yönetimi, `chmod`, `chown`, `umask`, POSIX ACLs ve `sudoers` yapılandırması.
-- **Process & Resource Management** — Process lifecycle, signals, `ps`, `top`, `kill`, systemd, `systemctl`, background processes ve temel resource takibi.
-- **Storage & Disk Management** — Partitioning, filesystem yapıları, ext4, XFS, mount işlemleri, `/etc/fstab` ve LVM.
-- **Linux Networking & Troubleshooting** — Interface yönetimi, routing, DNS çözümleme, `/etc/hosts`, `/etc/resolv.conf`, `ip`, `ss`, `tcpdump`, `dig` ve legacy `netstat` kullanımı.
-- **Package & Service Management** — Paket yöneticileri, repository kavramı, servis bağımlılıkları, startup davranışı ve güvenli güncelleme yaklaşımı.
+## 🐧 Module 03: Enterprise Linux System Administration — ⏳ Planned
 
-#### 🛡️ Module 03: Security Engineering & Incident Management — ⏳ Planned
+- ⏳ **Linux Architecture, Boot Process & FHS** — Kernel, initramfs, GRUB, systemd, boot süreci ve Linux dizin hiyerarşisi; `/etc`, `/var`, `/home`, `/opt`, `/tmp`, `/proc`, `/sys` ve `/dev`.
+- ⏳ **Shell, CLI & Stream Processing** — Standard input/output, pipes, redirection, environment variables ve `grep`, `awk`, `sed`, `cut`, `sort`, `uniq`, `find`, `xargs` gibi araçlar.
+- ⏳ **User & Permission Management** — User ve group yönetimi, UID/GID, `chmod`, `chown`, `umask`, POSIX ACLs, sudoers ve least-privilege yaklaşımı.
+- ⏳ **Process & Resource Management** — Process lifecycle, signals, foreground/background jobs, `ps`, `top`, `htop`, `kill`, file descriptors, memory ve CPU resource takibi.
+- ⏳ **systemd, Services & Scheduled Tasks** — Unit files, service dependencies, `systemctl`, `journalctl`, restart policies, systemd timers ve cron.
+- ⏳ **Storage, Filesystems & LVM** — Partitioning, block devices, ext4, XFS, mount işlemleri, `/etc/fstab`, inode yapısı, swap, LVM, RAID ve disk kapasite yönetimi.
+- ⏳ **Linux Networking & Troubleshooting** — Interface yönetimi, routing, DNS çözümleme, `/etc/hosts`, `systemd-resolved`, `ip`, `ss`, `tcpdump`, `dig`, `curl`, `nc` ve network namespaces.
+- ⏳ **Package & Repository Management** — `apt`, `dpkg`, `dnf`, `rpm`, repository yapıları, package signatures, dependency management ve güvenli güncelleme süreçleri.
+- ⏳ **Logging, Time & Operational Maintenance** — `/var/log`, systemd journal, rsyslog, log rotation, NTP, chrony, backup, restore validation ve bakım planları.
 
-- **Threat Modeling & Attack Lifecycle** — Temel threat modeling yaklaşımı, varlıklar, trust boundaries, attack surface, Cyber Kill Chain, APT ve saldırı yaşam döngüsü.
-- **Network and Availability Threats** — MITM, spoofing, DoS/DDoS, SYN flood ve hizmet kesintisi senaryoları.
-- **Malware & System Defense** — Worm, Trojan, ransomware, rootkit gibi malware türleri; sandboxing ve memory analysis gibi savunma ve analiz yaklaşımları.
-- **Firewalling** — `iptables` ve `nftables` mimarisi, tables, chains, hooks, connection tracking ve kural değerlendirme mantığı.
-- **System Auditing & Logging** — `/var/log`, systemd journal, auditd, log bütünlüğü, merkezi loglama ve güvenlik olaylarının incelenmesi.
-- **Log-Based Abuse Mitigation** — Fail2Ban çalışma mantığı, authentication log analizi, geçici engelleme ve sınırlamaları.
-- **Cryptography & SSH Security** — Symmetric ve asymmetric cryptography, hashing, SSH key pairs, host keys, `sshd_config` hardening ve güvenli yönetim erişimi.
-- **Incident Response Fundamentals** — Detection, triage, containment, eradication, recovery, evidence preservation ve post-incident review.
+---
 
-### 📦 Level 2: Infrastructure as Code & Containerization — ⏳ Planned
+## 🛡️ Module 04: Security Engineering & Incident Management — ⏳ Planned
 
-**Bulut, Otomasyon ve Konteyner Temelleri**
+- ⏳ **Security Foundations & Risk Management** — CIA triad, authentication, authorization, accountability, assets, threats, vulnerabilities, risk, attack surface ve defense in depth.
+- ⏳ **Threat Modeling & Attack Lifecycle** — Trust boundaries, data-flow diagrams, STRIDE, attack trees, Cyber Kill Chain, MITRE ATT&CK ve saldırı yaşam döngüsü.
+- ⏳ **Network and Availability Threats** — MITM, spoofing, session hijacking, DNS ve ARP saldırıları, DoS/DDoS, SYN flood ve hizmet kesintisi senaryoları.
+- ⏳ **Malware & Endpoint Defense** — Worm, Trojan, ransomware, rootkit, botnet, fileless malware, sandboxing, hashes, EDR ve endpoint hardening.
+- ⏳ **Firewalling & Network Defense** — Stateful ve stateless filtering, Netfilter, iptables, nftables, connection tracking, NAT, rate limiting ve segmentation.
+- ⏳ **Cryptography, PKI & SSH Security** — Symmetric ve asymmetric cryptography, hashing, digital signatures, certificates, SSH key pairs, host keys ve `sshd_config` hardening.
+- ⏳ **Linux Hardening & Vulnerability Management** — Attack-surface reduction, CIS Benchmarks, CVE/CVSS, patching, service inventory, permissions, PAM, SELinux ve AppArmor temelleri.
+- ⏳ **System Auditing, Logging & SIEM** — `/var/log`, systemd journal, auditd, log bütünlüğü, merkezi loglama, SIEM, detection rules ve security-event analysis.
+- ⏳ **Log-Based Abuse Mitigation** — Fail2Ban çalışma mantığı, authentication log analizi, geçici engelleme, rate limiting ve aracın güvenlik sınırlamaları.
+- ⏳ **Incident Response Fundamentals** — Preparation, detection, triage, containment, eradication, recovery, evidence preservation, communication ve post-incident review.
 
-> Altyapıların kodla tanımlandığı, sistem yapılandırmalarının otomatikleştirildiği ve konteyner tabanlı platformların oluşturulduğu seviyedir.
+---
 
-#### 📦 Module 04: Container Technologies — Docker Deep Dive — ⏳ Planned
+# 📦 Level 2: Application Infrastructure, Containers & Infrastructure as Code — ⏳ Planned
 
-- **Containerization vs. Virtualization** — Hypervisor tabanlı virtual machines ile operating-system-level containers arasındaki mimari farklar.
-- **Linux Kernel Namespaces & Cgroups** — Container isolation ve resource control mekanizmalarının Linux kernel içindeki temelleri.
-- **Container Runtime Internals** — Docker Engine, containerd, runc, OCI specifications ve Kubernetes Container Runtime Interface ilişkisi.
-- **Docker Core** — Docker CLI, image ve container lifecycle, Dockerfile yazım kuralları, layers, build cache ve multi-stage builds.
-- **Docker Storage** — Writable layers, volumes, bind mounts, tmpfs ve veri kalıcılığı.
-- **Docker Networking** — Bridge networks, port publishing, DNS-based service discovery ve multi-host networking temelleri.
-- **Container Security & Image Hardening** — Non-root containers, reduced capabilities, read-only filesystems, minimal base images, image provenance ve Trivy/Grype taramaları.
-- **Docker Compose** — Çok konteynerli yerel geliştirme ve doğrulama ortamlarının tanımlanması.
+### Uygulama, Veri, Otomasyon ve Konteyner Altyapıları
 
-#### ☸️ Module 05: Kubernetes Orchestration & Platform Fundamentals — ⏳ Planned
+Web uygulamalarının, API'lerin ve veri katmanlarının çalışma prensiplerinin öğrenildiği; konteyner tabanlı platformların ve kodla tanımlanan altyapıların oluşturulduğu seviyedir.
 
-- **Kubernetes Architecture** — API Server, etcd, Scheduler, kube-controller-manager, cloud-controller-manager, kubelet, kube-proxy ve container runtime görevleri.
-- **Kubernetes Core Objects** — Pods, ReplicaSets, Deployments, StatefulSets, DaemonSets, Jobs ve CronJobs.
-- **Services & Service Discovery** — ClusterIP, NodePort, LoadBalancer Services, EndpointSlices ve CoreDNS.
-- **Configuration & Secrets** — ConfigMaps, Secrets, environment variables, mounted volumes ve Kubernetes Secrets nesnelerinin güvenlik sınırlamaları.
-- **Kubernetes Security & RBAC** — ServiceAccounts, Role, ClusterRole, RoleBinding, ClusterRoleBinding ve least-privilege authorization.
-- **Storage in Kubernetes** — PersistentVolumes, PersistentVolumeClaims, StorageClasses, dynamic provisioning ve access modes.
-- **Traffic Management** — Ingress Controllers, Gateway API temelleri, NetworkPolicy ve service mesh yaklaşımları.
-- **GitOps & Declarative Delivery** — Kubernetes kaynaklarının Argo CD veya Flux ile deklaratif biçimde yönetilmesi.
-- **Workload Health & Recovery** — Startup, readiness ve liveness probes; container restart davranışı ve workload controller'larının desired state'i koruma yaklaşımı.
-- **Scaling & Reliability** — Horizontal Pod Autoscaler, PodDisruptionBudget, scheduling constraints, resource requests/limits ve controlled rollout stratejileri.
+---
 
-#### ⚙️ Module 06: Infrastructure as Code & Configuration Management — ⏳ Planned
+## 🌍 Module 05: Web, API & Database Foundations — ⏳ Planned
 
-- **Infrastructure as Code Fundamentals** — Declarative ve imperative yaklaşımlar, idempotency, drift ve repeatability.
-- **Terraform Core** — Providers, resources, data sources, variables, outputs, modules, plans ve lifecycle.
-- **Terraform State Security** — `terraform.tfstate` güvenliği, Amazon S3 remote state, native S3 state locking, encryption, versioning ve restricted IAM access.
-- **Legacy State Locking Considerations** — DynamoDB tabanlı locking yönteminin yalnızca mevcut eski yapıların geçişi veya uyumluluk ihtiyaçları kapsamında değerlendirilmesi.
-- **Ansible Fundamentals** — Agentless architecture, SSH connections, inventories, playbooks, handlers, templates ve roles.
-- **Ansible Vault** — Hassas değerlerin şifrelenmesi ve secret management sınırlamaları.
-- **Git & Version Control Integration** — Commit disiplini, pull requests, code review, GitFlow ve trunk-based development yaklaşımları.
-- **Infrastructure Validation** — Formatting, validation, linting, policy checks ve kontrollü plan/apply süreçleri.
+- ⏳ **Web Architecture Fundamentals** — Client-server modeli, request-response akışı, stateless ve stateful application yaklaşımları.
+- ⏳ **HTTP & HTTPS** — HTTP methods, status codes, headers, content types, caching, HTTP/1.1, HTTP/2, HTTP/3 ve HTTPS.
+- ⏳ **TLS & Certificate Validation** — TLS handshake, X.509 certificates, Certificate Authorities, SNI, certificate chains ve renewal süreçleri.
+- ⏳ **Cookies, Sessions & Authentication** — Cookies, session management, authentication state, secure cookie attributes ve session security.
+- ⏳ **REST API Fundamentals** — Resources, endpoints, HTTP methods, idempotency, pagination, versioning, rate limiting ve API error handling.
+- ⏳ **Tokens, JWT & OAuth 2.0** — Access tokens, refresh tokens, JWT yapısı, OAuth 2.0 akışları ve OpenID Connect temelleri.
+- ⏳ **Browser & API Security** — CORS, CSRF, XSS, Host header risks, input validation, authentication ve authorization ayrımı.
+- ⏳ **Relational Database Fundamentals** — PostgreSQL ve MySQL genel mimarisi, schemas, tables, primary/foreign keys ve normalization.
+- ⏳ **Transactions & Concurrency** — ACID, transaction isolation levels, locks, deadlocks ve consistency kavramları.
+- ⏳ **Indexes & Query Performance** — Index yapıları, query plans, full-table scans, latency ve temel query optimization.
+- ⏳ **Database Availability & Protection** — Replication, backup, restore testing, encryption, access control ve credential management.
+- ⏳ **Caching & In-Memory Data Stores** — Redis temelleri, cache-aside yaklaşımı, expiration, persistence ve cache invalidation problemleri.
 
-### 🚀 Level 3: Automation, CI/CD & Observability — ⏳ Planned
+---
 
-**Sürekli Entegrasyon, Otomasyon ve Gözlemlenebilirlik**
+## 📦 Module 06: Container Technologies — Docker Deep Dive — ⏳ Planned
 
-> Yazılım teslim süreçlerinin otomatikleştirildiği; sistemlerin metrics, logs ve traces kullanılarak gözlemlendiği seviyedir.
+- ⏳ **Containerization vs Virtualization** — Hypervisor tabanlı virtual machines ile operating-system-level containers arasındaki mimari farklar.
+- ⏳ **Linux Kernel Namespaces & Cgroups** — Container isolation ve resource-control mekanizmalarının Linux kernel içindeki temelleri.
+- ⏳ **Container Runtime Internals** — Docker Engine, containerd, runc, OCI specifications ve Kubernetes Container Runtime Interface ilişkisi.
+- ⏳ **Docker Core** — Docker CLI, image ve container lifecycle, Dockerfile yazım kuralları, layers, build cache ve multi-stage builds.
+- ⏳ **Docker Storage** — Writable layers, volumes, bind mounts, tmpfs, UID/GID sorunları ve veri kalıcılığı.
+- ⏳ **Docker Networking** — Network namespaces, veth pairs, bridge networks, port publishing, NAT, container DNS ve service discovery.
+- ⏳ **Docker Compose** — Çok konteynerli yerel geliştirme, test ve doğrulama ortamlarının tanımlanması.
+- ⏳ **Registries & Image Lifecycle** — Docker Hub, GHCR, Amazon ECR, tags, digests, retention, signing ve image provenance.
+- ⏳ **Container Security & Image Hardening** — Non-root containers, reduced capabilities, read-only filesystems, seccomp, minimal images ve Trivy/Grype taramaları.
+- ⏳ **Docker Operations & Troubleshooting** — Logs, inspect, events, health checks, networking, storage, OOM ve safe-cleanup yaklaşımları.
 
-#### 🔄 Module 07: CI/CD Pipelines & GitOps — ⏳ Planned
+---
 
-- **CI/CD Core Concepts** — Continuous Integration, Continuous Delivery ve Continuous Deployment arasındaki farklar.
-- **Pipeline Platforms** — GitHub Actions veya GitLab CI ile workflow, jobs, runners, stages, artifacts ve environment yönetimi.
-- **DevSecOps & Security Gates** — SonarQube ile code quality/static analysis, Gitleaks veya TruffleHog ile secret scanning ve Trivy ile container image vulnerability scanning.
-- **Artifact Management** — Docker Hub, GitHub Container Registry, Amazon ECR ve JFrog Artifactory gibi registry ve artifact repository çözümleri.
-- **Secure Authentication** — Uzun ömürlü cloud credentials yerine OpenID Connect ve kısa ömürlü kimlik bilgilerinin kullanılması.
-- **GitOps Delivery** — Uygulama kodu ile deployment state'inin ayrılması, declarative manifests ve reconciliation.
-- **Deployment Strategies** — Rolling update, blue/green, canary ve rollback yaklaşımları.
+## ☸️ Module 07: Kubernetes Orchestration & Platform Fundamentals — ⏳ Planned
 
-#### 🐍 Module 08: Systems Automation & Scripting — Bash & Python — ⏳ Planned
+- ⏳ **Kubernetes Architecture** — API Server, etcd, Scheduler, kube-controller-manager, cloud-controller-manager, kubelet, kube-proxy ve container runtime görevleri.
+- ⏳ **Kubernetes Core Objects** — Pods, ReplicaSets, Deployments, StatefulSets, DaemonSets, Jobs ve CronJobs.
+- ⏳ **Scheduling & Resources** — Requests, limits, QoS classes, affinity, anti-affinity, taints, tolerations ve pod placement.
+- ⏳ **Services & Service Discovery** — ClusterIP, NodePort, LoadBalancer Services, EndpointSlices, kube-proxy ve CoreDNS.
+- ⏳ **Configuration & Secrets** — ConfigMaps, Secrets, environment variables, mounted volumes ve Kubernetes Secrets nesnelerinin güvenlik sınırlamaları.
+- ⏳ **Kubernetes Storage** — PersistentVolumes, PersistentVolumeClaims, StorageClasses, dynamic provisioning, access modes ve backup considerations.
+- ⏳ **Kubernetes Security & RBAC** — ServiceAccounts, Roles, ClusterRoles, RoleBindings, Security Contexts, Pod Security Standards ve least privilege.
+- ⏳ **Traffic Management** — Ingress Controllers, Gateway API, NetworkPolicy, service mesh, mTLS, retries ve circuit breaking.
+- ⏳ **Workload Health & Recovery** — Startup, readiness ve liveness probes; restart behavior ve controller'ların desired state'i koruma yaklaşımı.
+- ⏳ **Scaling & Reliability** — HPA, VPA kavramları, Cluster Autoscaler, PodDisruptionBudget, graceful shutdown ve controlled rollout stratejileri.
+- ⏳ **Cluster Lifecycle & Packaging** — kubeadm, managed Kubernetes, upgrades, Helm, Kustomize, certificates ve etcd backup temelleri.
+- ⏳ **Kubernetes Observability & Troubleshooting** — Events, logs, Metrics Server, Prometheus, CrashLoopBackOff, ImagePullBackOff, DNS ve volume failures.
+- ⏳ **GitOps & Declarative Delivery** — Kubernetes kaynaklarının Argo CD veya Flux ile deklaratif biçimde yönetilmesi.
 
-- **Bash Scripting** — Variables, conditionals, loops, functions, arguments, exit codes ve controlled error handling.
-- **Shell Safety Practices** — Quoting, input validation, temporary files, cleanup traps ve `set -Eeuo pipefail` kullanımının bağlama bağlı değerlendirilmesi.
-- **Regular Expressions** — Log analizi, validation ve metin işleme için regex temelleri.
-- **Automation Use Cases** — Sistem yedekleme, disk kullanım kontrolü, log rotation, service health checks ve raporlama.
-- **Python for Operations** — `os`, `pathlib`, `sys`, `subprocess`, `logging`, `json` ve `requests` kullanımı.
-- **API Automation** — Authentication, pagination, timeout, retry, error handling ve rate limiting.
-- **Secure Automation** — Secrets yönetimi, least privilege, auditability ve destructive action korumaları.
+---
 
-#### 📊 Module 09: Observability, Logging & Monitoring — ⏳ Planned
+## ⚙️ Module 08: Infrastructure as Code & Configuration Management — ⏳ Planned
 
-- **Observability Fundamentals** — Metrics, logs ve traces arasındaki farklar ve birlikte kullanım biçimleri.
-- **The Four Golden Signals** — Latency, traffic, errors ve saturation.
-- **Metrics & Monitoring** — Prometheus architecture, service discovery, scraping, PromQL ve recording rules.
-- **Visualization** — Grafana dashboards, variables, annotations ve veri kaynağı yönetimi.
-- **Centralized Logging** — Elasticsearch tabanlı çözümler veya Grafana Loki ile log aggregation ve analysis.
-- **Distributed Tracing** — OpenTelemetry instrumentation ve telemetry collection; Jaeger veya Grafana Tempo gibi tracing backend'leri.
-- **Alerting** — Prometheus Alertmanager ile notification routing, grouping, inhibition ve Slack, Microsoft Teams, email veya PagerDuty entegrasyonları.
-- **Operational Reliability** — Actionable alerts, alert fatigue, runbooks ve incident response bağlantısı.
+- ⏳ **Infrastructure as Code Fundamentals** — Declarative ve imperative yaklaşımlar, desired state, idempotency, drift, convergence ve repeatability.
+- ⏳ **Terraform Language & Workflow** — Providers, resources, data sources, HCL, dependencies, `init`, `plan`, `apply` ve `destroy`.
+- ⏳ **Terraform Variables & Data Modeling** — Variables, outputs, locals, lists, maps, objects, conditionals, `count` ve `for_each`.
+- ⏳ **Terraform Modules** — Root ve child modules, reusable architecture, module boundaries, version pinning ve environment separation.
+- ⏳ **Terraform State Security** — `terraform.tfstate` güvenliği, Amazon S3 remote state, native S3 state locking, encryption, versioning ve restricted IAM access.
+- ⏳ **Legacy State Locking Considerations** — DynamoDB tabanlı locking yönteminin mevcut eski yapıların geçişi veya uyumluluk ihtiyaçları kapsamında değerlendirilmesi.
+- ⏳ **Terraform Lifecycle & Testing** — Lifecycle rules, import, moved blocks, static analysis, Policy as Code, security scanning ve destructive-change protection.
+- ⏳ **Ansible Fundamentals** — Agentless architecture, SSH connections, inventories, modules, facts, ad-hoc commands ve privilege escalation.
+- ⏳ **Ansible Playbooks & Roles** — Playbooks, handlers, templates, variables, loops, conditionals, roles ve idempotent service management.
+- ⏳ **Ansible Vault & Operational Safety** — Hassas değerlerin şifrelenmesi, secret injection, least privilege, serial changes ve rollback limitations.
+- ⏳ **Git & Version Control Integration** — Commit disiplini, pull requests, protected branches, code review, GitFlow ve trunk-based development.
+- ⏳ **Infrastructure Validation** — Formatting, validation, linting, policy checks, controlled plan/apply ve CI/CD entegrasyonu.
+- ⏳ **Terraform & Ansible Integration** — Provisioning ve configuration-management sorumluluklarının ayrılması, dynamic inventory ve doğrulama süreçleri.
 
-### ☁️ Level 4: Cloud Computing & Resilient Architectures — ⏳ Planned
+---
 
-**Bulut ve Dayanıklı Sistem Mimarileri**
+# 🚀 Level 3: Software Engineering, Automation, CI/CD & Observability — ⏳ Planned
 
-> Yüksek erişilebilirlik, dayanıklılık, ölçeklenebilirlik, güvenli erişim ve felaket kurtarma ilkelerine dayalı bulut mimarilerinin ele alındığı seviyedir.
+### Yazılım Teslimi, Otomasyon ve Gözlemlenebilirlik
 
-#### ☁️ Module 10: Cloud Computing — AWS Focus — ⏳ Planned
+Altyapı ve platform yazılımlarının sürdürülebilir biçimde geliştirildiği; teslim süreçlerinin otomatikleştirildiği ve sistemlerin metrics, logs ve traces kullanılarak gözlemlendiği seviyedir.
 
-- **Compute Services** — Amazon EC2, launch templates ve Auto Scaling Groups.
-- **Networking in AWS** — VPC, public/private subnets, route tables, Internet Gateway, NAT Gateway, VPC endpoints ve Security Groups.
-- **Identity & Access Management** — IAM users, roles, policies, trust policies ve Principle of Least Privilege.
-- **Secrets & Key Management** — AWS Secrets Manager, Systems Manager Parameter Store ve AWS KMS.
-- **Storage Services** — Amazon S3, EBS ve EFS arasındaki kullanım ve trade-off farkları.
-- **Load Balancing** — Application Load Balancer, Network Load Balancer, health checks ve target groups.
-- **Serverless & Event-Driven Architecture** — AWS Lambda, Amazon SQS, Amazon SNS ve event-driven tasarım.
-- **Cloud Security & Visibility** — CloudTrail, CloudWatch, VPC Flow Logs ve temel configuration visibility.
-- **Cost & Responsibility Model** — Shared Responsibility Model, tagging, lifecycle management ve cost controls.
+---
 
-#### 🏛️ Module 11: Site Reliability Engineering & High Availability — ⏳ Planned
+## 🔄 Module 09: CI/CD Pipelines & GitOps — ⏳ Planned
 
-- **SRE Principles** — Service Level Indicators, Service Level Objectives, Service Level Agreements ve error budgets.
-- **Reliability Engineering** — Availability, durability, fault tolerance, resilience ve graceful degradation farkları.
-- **Incident Management** — Incident detection, triage, escalation, communication ve operational ownership.
-- **Blameless Postmortems** — Timeline, contributing factors, root-cause analysis, corrective actions ve learning culture.
-- **Chaos Engineering** — Yetkili ortamlarda kontrollü, hipotez tabanlı failure experiments ve blast-radius yönetimi.
-- **Disaster Recovery** — Recovery Time Objective, Recovery Point Objective, backup/restore ve recovery testing.
-- **High Availability Architectures** — Multi-AZ ve Multi-Region yaklaşımları, failure domains, latency ve maliyet trade-off'ları.
-- **Capacity Planning** — Traffic growth, resource saturation, headroom ve scaling decisions.
-- **Operational Readiness** — Runbooks, dashboards, alerts, rollback plans ve recovery validation.
+- ⏳ **CI/CD Core Concepts** — Continuous Integration, Continuous Delivery ve Continuous Deployment arasındaki farklar.
+- ⏳ **Git Workflows & Pipeline Triggers** — Branching strategies, pull requests, protected branches, tags, releases ve event-based triggers.
+- ⏳ **Pipeline Platforms** — GitHub Actions veya GitLab CI ile workflows, jobs, runners, stages, artifacts ve environment yönetimi.
+- ⏳ **Build, Test & Artifact Pipelines** — Unit, integration ve end-to-end tests, caching, matrices, reports ve reproducible builds.
+- ⏳ **Container Build & Delivery** — Docker/BuildKit, image tagging, commit SHA kullanımı, registry authentication, scanning, signing ve provenance.
+- ⏳ **DevSecOps & Security Gates** — SonarQube, Gitleaks, TruffleHog, Trivy, SAST, SCA, IaC scanning ve controlled policy enforcement.
+- ⏳ **Artifact Management** — Docker Hub, GitHub Container Registry, Amazon ECR ve JFrog Artifactory gibi registry ve artifact-repository çözümleri.
+- ⏳ **Secure Pipeline Authentication** — Uzun ömürlü cloud credentials yerine OpenID Connect ve kısa ömürlü kimlik bilgilerinin kullanılması.
+- ⏳ **Software Supply-Chain Security** — SBOM, dependency trust, signing, Sigstore, SLSA ve artifact-integrity yaklaşımı.
+- ⏳ **Deployment Strategies** — Rolling update, blue/green, canary, feature flags, progressive delivery ve rollback yaklaşımları.
+- ⏳ **GitOps Delivery** — Application code ile deployment state'inin ayrılması, declarative manifests, reconciliation ve drift correction.
+- ⏳ **Pipeline Observability & Troubleshooting** — Pipeline metrics, runner utilization, flaky tests, failures, retries, concurrency ve runbooks.
+
+---
+
+## 🐍 Module 10: Systems Automation & Scripting — Bash & Python — ⏳ Planned
+
+- ⏳ **Bash Scripting Fundamentals** — Variables, conditionals, loops, functions, arguments, arrays, exit codes ve debugging.
+- ⏳ **Shell Safety Practices** — Quoting, input validation, temporary files, cleanup traps ve `set -Eeuo pipefail` kullanımının bağlama bağlı değerlendirilmesi.
+- ⏳ **Regular Expressions & Text Processing** — Regex, `grep`, `sed`, `awk`, `cut`, `sort`, `uniq`, `tr`, `find`, `xargs`, `jq` ve `yq`.
+- ⏳ **System Administration Automation** — Backup, restore validation, disk monitoring, log rotation, service-health checks ve raporlama.
+- ⏳ **Python Fundamentals for Operations** — Data types, functions, exceptions, virtual environments, type hints, logging ve configuration.
+- ⏳ **Python for Filesystems & Processes** — `os`, `pathlib`, `sys`, `shutil`, `subprocess`, signals, permissions ve safe command execution.
+- ⏳ **API Automation** — Authentication, pagination, timeout, retry, exponential backoff, rate limiting ve schema validation.
+- ⏳ **Network & Security Automation** — DNS checks, TCP/UDP connectivity, certificate inspection, log parsing, firewall validation ve alert enrichment.
+- ⏳ **Secure Automation** — Secrets yönetimi, least privilege, auditability, idempotency ve destructive-action protections.
+- ⏳ **Automation Quality & Packaging** — Unit tests, mocking, linting, type checking, dependency pinning, CLI design ve CI integration.
+
+---
+
+## 💻 Module 11: Software Engineering for Infrastructure & Platform Teams — ⏳ Planned
+
+- ⏳ **Software Engineering Fundamentals** — Requirements, maintainability, readability, testability ve technical-debt yönetimi.
+- ⏳ **Clean Code Principles** — Naming, small functions, separation of concerns, error handling ve understandable abstractions.
+- ⏳ **SOLID Principles** — Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation ve Dependency Inversion.
+- ⏳ **Design Patterns** — Factory, Strategy, Adapter, Observer, Dependency Injection ve infrastructure automation kullanım örnekleri.
+- ⏳ **Testing Strategies** — Unit, integration, end-to-end, contract ve smoke tests; mocks, stubs ve test doubles.
+- ⏳ **Refactoring & Code Review** — Safe refactoring, code smells, pull-request reviews ve incremental improvement.
+- ⏳ **Application Architecture** — Monolith, modular monolith, microservices, event-driven architecture ve architecture trade-offs.
+- ⏳ **Distributed-System Fundamentals** — Partial failures, timeouts, retries, idempotency, consistency ve eventual consistency.
+- ⏳ **API & Service Design** — Versioning, backward compatibility, error contracts, rate limits ve graceful degradation.
+- ⏳ **Configuration & Dependency Management** — Configuration separation, feature flags, dependency pinning ve environment consistency.
+- ⏳ **Secure Software Development** — Input validation, secrets, dependency riskleri, threat modeling ve secure defaults.
+- ⏳ **Engineering Documentation** — Architecture Decision Records, diagrams, runbooks, API documentation ve operational handover.
+
+---
+
+## 📊 Module 12: Observability, Logging & Monitoring — ⏳ Planned
+
+- ⏳ **Observability Fundamentals** — Metrics, logs, traces, events ve profiles arasındaki farklar ve birlikte kullanım biçimleri.
+- ⏳ **Monitoring Approaches** — White-box, black-box, synthetic monitoring, health checks ve baselines.
+- ⏳ **The Four Golden Signals** — Latency, traffic, errors ve saturation.
+- ⏳ **RED & USE Methods** — Request-driven services ve infrastructure resources için gözlem yöntemleri.
+- ⏳ **Metrics & Prometheus** — Prometheus architecture, service discovery, scraping, exporters, PromQL, recording ve alerting rules.
+- ⏳ **Grafana & Dashboard Engineering** — Dashboards, panels, variables, annotations, thresholds, provisioning ve dashboard anti-patterns.
+- ⏳ **Centralized Logging** — Elasticsearch tabanlı çözümler veya Grafana Loki ile log aggregation, parsing, retention ve analysis.
+- ⏳ **Distributed Tracing** — OpenTelemetry instrumentation ve Collector; Jaeger veya Grafana Tempo gibi tracing backend'leri.
+- ⏳ **Alerting & Notification Engineering** — Prometheus Alertmanager ile routing, grouping, deduplication, inhibition, silences ve escalation.
+- ⏳ **SLI, SLO & Reliability Monitoring** — Availability, latency, error budgets, burn rate ve SLO-based alerting.
+- ⏳ **Platform & Kubernetes Observability** — Host, container, node, pod, workload ve control-plane telemetry.
+- ⏳ **Security Observability** — Authentication, authorization, audit, network, DNS, firewall ve cloud-security telemetry.
+- ⏳ **Operational Reliability** — Actionable alerts, alert fatigue, missing telemetry, runbooks ve incident-response bağlantısı.
+- ⏳ **Observability Troubleshooting** — Scrape failures, missing logs, trace gaps, cardinality explosions, storage ve query-performance sorunları.
+
+---
+
+# ☁️ Level 4: Cloud Computing, Reliability & Intelligent Operations — ⏳ Planned
+
+### Bulut, Dayanıklı Sistemler ve Akıllı Operasyon
+
+Yüksek erişilebilirlik, dayanıklılık, ölçeklenebilirlik, güvenli erişim, performans, felaket kurtarma ve yapay zekâ destekli mühendislik ilkelerine dayalı sistemlerin ele alındığı seviyedir.
+
+---
+
+## ☁️ Module 13: Cloud Computing — AWS Focus — ⏳ Planned
+
+- ⏳ **Cloud Computing Foundations** — On-premises ve cloud farkları, IaaS, PaaS, SaaS, elasticity, scalability ve Shared Responsibility Model.
+- ⏳ **AWS Global Infrastructure** — Regions, Availability Zones, edge locations, regional ve global services.
+- ⏳ **Identity & Access Management** — IAM users, groups, roles, policies, trust policies, STS ve Principle of Least Privilege.
+- ⏳ **AWS Networking & VPC Architecture** — VPC, CIDR planning, public/private subnets, route tables, Internet Gateway, NAT Gateway ve VPC endpoints.
+- ⏳ **Network Security** — Security Groups, Network ACLs, VPC Flow Logs, segmentation ve egress-control yaklaşımları.
+- ⏳ **Compute Services** — Amazon EC2, AMIs, launch templates, user data, metadata service, Auto Scaling Groups ve instance lifecycle.
+- ⏳ **Load Balancing** — Application Load Balancer, Network Load Balancer, listeners, target groups, health checks ve TLS.
+- ⏳ **Storage Services** — Amazon S3, EBS ve EFS arasındaki kullanım, availability, durability, performance ve cost trade-off'ları.
+- ⏳ **Managed Databases** — Amazon RDS, Aurora, DynamoDB ve ElastiCache genel mimarileri.
+- ⏳ **Serverless & Event-Driven Architecture** — AWS Lambda, Amazon SQS, SNS, EventBridge, retries, DLQs ve idempotency.
+- ⏳ **Secrets & Key Management** — AWS Secrets Manager, Systems Manager Parameter Store, AWS KMS ve envelope encryption.
+- ⏳ **Cloud Security Services** — CloudTrail, Config, GuardDuty, Security Hub, Inspector, WAF, Shield ve Macie temelleri.
+- ⏳ **Monitoring & Auditing** — CloudWatch metrics, logs, alarms, dashboards, CloudTrail events ve centralized logging.
+- ⏳ **High Availability & Disaster Recovery on AWS** — Multi-AZ, Multi-Region, backup, snapshots, replicas, Route 53 failover, RTO ve RPO.
+- ⏳ **Governance & Cost Management** — AWS Organizations, OUs, SCPs, tagging, budgets, Cost Explorer, quotas ve guardrails.
+- ⏳ **AWS & Infrastructure as Code Integration** — Terraform, remote state, OIDC identities, environment promotion ve drift detection.
+
+---
+
+## 🏛️ Module 14: Site Reliability Engineering & High Availability — ⏳ Planned
+
+- ⏳ **SRE Foundations & Service Ownership** — SRE ve DevOps ilişkisi, service boundaries, ownership, operational readiness ve reliability as a product feature.
+- ⏳ **SLI, SLO, SLA & Error Budgets** — Service indicators, objectives, external commitments, measurement windows ve burn rate.
+- ⏳ **Toil Reduction & Reliability Automation** — Repetitive operational work, safe automation, self-service, guardrails ve human-in-the-loop.
+- ⏳ **Monitoring, Alerting & On-Call** — Golden Signals, actionable alerts, severity, routing, escalation, handoffs ve on-call health.
+- ⏳ **Incident Management** — Incident detection, declaration, triage, Incident Commander, stabilization, communication ve recovery.
+- ⏳ **Blameless Postmortems** — Timeline, impact, contributing factors, root-cause analysis, corrective actions ve learning culture.
+- ⏳ **Resilience Patterns** — Timeouts, retries, exponential backoff, jitter, circuit breakers, bulkheads, rate limiting ve load shedding.
+- ⏳ **High Availability Architectures** — Redundancy, single points of failure, active-passive, active-active, quorum, replication ve DNS failover.
+- ⏳ **Disaster Recovery & Business Continuity** — RTO, RPO, backup/restore, Pilot Light, Warm Standby, Active-Active ve recovery testing.
+- ⏳ **Chaos Engineering** — Yetkili ortamlarda kontrollü, hipotez tabanlı failure experiments, abort conditions ve blast-radius management.
+- ⏳ **Release Engineering & Change Reliability** — Rolling, blue/green, canary, feature flags, migration safety ve rollback.
+- ⏳ **Operational Readiness** — Runbooks, dashboards, alerts, deployment validation, capacity ownership ve recovery plans.
+
+---
+
+## ⚡ Module 15: Performance Engineering & Capacity Analysis — ⏳ Planned
+
+- ⏳ **Performance Engineering Fundamentals** — Latency, throughput, concurrency, utilization, saturation ve bottleneck kavramları.
+- ⏳ **CPU Performance Analysis** — CPU utilization, load average, run queues, context switches, user/system time ve CPU profiling.
+- ⏳ **Memory Performance Analysis** — Memory allocation, cache, swap, page faults, memory pressure, leaks ve OOM behavior.
+- ⏳ **Storage & I/O Performance** — IOPS, throughput, latency, queue depth, filesystem overhead ve disk saturation.
+- ⏳ **Network Performance Analysis** — Bandwidth, packet loss, jitter, retransmissions, connection limits ve socket queues.
+- ⏳ **Application Profiling** — Hot paths, function-level profiling, memory allocation, lock contention ve flame graphs.
+- ⏳ **Database Performance** — Query latency, indexes, execution plans, connection pools, locks ve slow-query analysis.
+- ⏳ **Load, Stress & Soak Testing** — Normal load, peak load, breaking points, long-duration tests ve test-environment limitations.
+- ⏳ **Benchmarking Methodology** — Baselines, controlled experiments, repeatability, warm-up effects ve misleading benchmark risks.
+- ⏳ **Capacity Planning** — Growth forecasting, resource headroom, seasonality, quotas ve scaling decisions.
+- ⏳ **Backpressure & Queue Management** — Queue depth, concurrency limits, rate limiting ve overload behavior.
+- ⏳ **Performance Troubleshooting** — Metrics, logs, traces ve profiles kullanılarak katmanlı bottleneck analizi.
+- ⏳ **Performance vs Cost Trade-offs** — Vertical ve horizontal scaling, overprovisioning, efficiency ve cloud-cost etkileri.
+
+---
+
+## 🤖 Module 16: AI-Assisted Engineering & Operational Intelligence — ⏳ Planned
+
+- ⏳ **AI-Assisted Engineering Fundamentals** — Yapay zekâ araçlarının yazılım, sistem, cloud ve güvenlik mühendisliğinde doğru kullanım alanları.
+- ⏳ **Prompt Design for Engineers** — Gereksinim, bağlam, kısıt, doğrulama kriteri ve beklenen çıktı formatının açık tanımlanması.
+- ⏳ **AI-Assisted Code Generation** — Bash, Python, Terraform, Ansible ve Kubernetes manifest taslaklarının kontrollü üretilmesi.
+- ⏳ **AI-Assisted Code Review** — Logic errors, security risks, maintainability issues, race conditions ve missing error handling kontrolleri.
+- ⏳ **Infrastructure Review** — Terraform plans, IAM policies, Kubernetes manifests ve network rules için AI destekli inceleme.
+- ⏳ **Log & Incident Analysis** — Log özetleme, timeline oluşturma, correlation, hypothesis generation ve incident triage desteği.
+- ⏳ **AI-Assisted Troubleshooting** — Hata mesajları, metrics, traces ve system outputs üzerinden olası nedenlerin önceliklendirilmesi.
+- ⏳ **Security Analysis & Threat Hunting** — Detection-rule taslakları, IOC enrichment, suspicious-pattern analysis ve false-positive değerlendirmesi.
+- ⏳ **Documentation & Knowledge Management** — README, runbook, postmortem, architecture documentation ve technical-summary üretimi.
+- ⏳ **Output Verification** — AI tarafından üretilen komut, kod, policy ve teknik iddiaların bağımsız olarak doğrulanması.
+- ⏳ **Hallucination & Context Risks** — Uydurulmuş komutlar, eski bilgiler, yanlış varsayımlar ve eksik bağlam nedeniyle oluşabilecek riskler.
+- ⏳ **Sensitive Data Protection** — Credentials, logs, source code, personal data ve şirket bilgilerinin AI araçlarına aktarılma riskleri.
+- ⏳ **Human Approval & Safety Boundaries** — Production değişiklikleri, destructive commands, security decisions ve automated actions için insan onayı.
+- ⏳ **AI-Augmented Operations** — Alert enrichment, anomaly summarization, runbook suggestions ve controlled remediation yaklaşımları.
+- ⏳ **Responsible AI Use** — Privacy, auditability, intellectual property, bias, accountability ve organizational-policy gereksinimleri.
+
+---
+
+# 🏆 Milestone Portfolio Projects
+
+## Project 1 — Hardened & Audited Linux Server Infrastructure
+
+**Zamanlama:** Level 1 tamamlandıktan sonra.
+
+Networking, Linux administration, users and permissions, systemd, Linux networking, nftables, SSH hardening, Fail2Ban, auditd, logging, backup, Bash automation, incident validation ve teknik dokümantasyon alanlarını birleştiren kapsamlı bir sunucu güvenliği projesi.
+
+---
+
+## Project 2 — Automated Provisioning of a Production-Oriented Kubernetes Environment
+
+**Zamanlama:** Level 2 tamamlandıktan sonra.
+
+Docker, secure images, Kubernetes workloads, Services, RBAC, NetworkPolicy, storage, probes, Terraform, remote state, Ansible, AWS VPC/EC2, automated validation ve operasyonel dokümantasyon alanlarını birleştiren otomatik altyapı projesi.
+
+---
+
+## Project 3 — Resilient Cloud-Native GitOps & Observability Platform
+
+**Zamanlama:** Level 3 ve Level 4 tamamlandıktan sonra.
+
+CI/CD, DevSecOps security gates, software supply-chain security, GitOps, Kubernetes, Prometheus, Grafana, Loki, OpenTelemetry, alerting, SLOs, AWS Multi-AZ, IAM, backup, disaster recovery, resilience testing, runbooks, postmortems, performance analysis ve AI-assisted operational workflows alanlarını birleştiren kapsamlı platform mühendisliği projesi.
 
 ## 🏆 Section 2: Milestone Portfolio Projects
 
