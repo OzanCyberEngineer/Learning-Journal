@@ -71,34 +71,34 @@ Ağ üzerindeki tekil bir TCP/UDP bağlantısı ise **4-Tuple (Soket Çifti)** i
 UDP başlığı sabittir ve sadece **8 Byte (64 bit)** uzunluğundadır:
 
     0                   16                  31 bit
-   +-------------------+-------------------+
-   |    Source Port    |  Destination Port |  (4 Byte)
-   +-------------------+-------------------+
-   |      Length       |     Checksum      |  (4 Byte)
-   +-------------------+-------------------+
-   |              DATA (Payload)           |
-   +---------------------------------------+
+       +-------------------+-------------------+
+       |    Source Port    |  Destination Port |  (4 Byte)
+       +-------------------+-------------------+
+       |      Length       |     Checksum      |  (4 Byte)
+       +-------------------+-------------------+
+       |              DATA (Payload)           |
+       +---------------------------------------+
 
 #### TCP Header Yapısı
 TCP başlığı, opsiyonlar hariç **20 Byte** sabittir. Opsiyon alanlarıyla birlikte **60 Byte**'a kadar çıkabilir:
 
     0                   16                  31 bit
-   +-------------------+-------------------+
-   |    Source Port    |  Destination Port |  (4 Byte)
-   +---------------------------------------+
-   |            Sequence Number            |  (4 Byte)
-   +---------------------------------------+
-   |         Acknowledgment Number         |  (4 Byte)
-   +-------+-------+---+-------------------+
-   | Data  |Reser- |F  |    Window Size    |  (4 Byte)
-   |Offset |ved    |lags|                  |
-   +-------+-------+---+-------------------+
-   |     Checksum      |   Urgent Pointer  |  (4 Byte)
-   +-------------------+-------------------+
-   |        Options (0 - 40 Bytes)         |
-   +---------------------------------------+
-   |              DATA (Payload)           |
-   +---------------------------------------+
+       +-------------------+-------------------+
+       |    Source Port    |  Destination Port |  (4 Byte)
+       +---------------------------------------+
+       |            Sequence Number            |  (4 Byte)
+       +---------------------------------------+
+       |         Acknowledgment Number         |  (4 Byte)
+       +-------+-------+---+-------------------+
+       | Data  |Reser- |F  |    Window Size    |  (4 Byte)
+       |Offset |ved    |lags|                  |
+       +-------+-------+---+-------------------+
+       |     Checksum      |   Urgent Pointer  |  (4 Byte)
+       +-------------------+-------------------+
+       |        Options (0 - 40 Bytes)         |
+       +---------------------------------------+
+       |              DATA (Payload)           |
+       +---------------------------------------+
 
 #### TCP Flags (Bayraklar)
 * **SYN (Synchronize):** Bağlantı başlatma ve başlangıç sıra numaralarını (ISN) senkronize etme bayrağı.
