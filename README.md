@@ -41,8 +41,8 @@ Yol haritası; teknik dokümantasyonlar, güvenlik odaklı değerlendirmeler, uy
 - ✅ **VLAN & VXLAN** — Layer 2 segmentasyonu, access ve trunk portlar, IEEE 802.1Q tagging, VLAN hopping riskleri, VXLAN overlay mimarisi, VTEP ve VNI kavramları.
 - ✅ **Network Routing & Subnetting** — IPv4 adresleme, CIDR, subnetting, routing table, default gateway, static ve dynamic routing temelleri, OSPF/BGP genel mantığı ve IP fragmentation.
 - ✅ **Transport Layer & Traffic Control** — TCP ve UDP, portlar ve socket'ler, TCP three-way handshake, sequence ve acknowledgment numbers, flow control, congestion control, retransmission ve connection termination.
-- ⏳ **Application Layer Services** — DNS kayıt türleri, DNS resolution, DNS spoofing riskleri, DHCP DORA süreci, DHCP Snooping, HTTP/HTTPS ve TLS handshake.
-- ⏳ **Load Balancing & Proxy Concepts** — Forward proxy ve reverse proxy, Layer 4 ve Layer 7 load balancing, health checks, session persistence, TLS termination ve TLS passthrough.
+- ✅ **Application Layer Services** — DNS kayıt türleri, DNS resolution, DNS spoofing riskleri, DHCP DORA süreci, DHCP Snooping, HTTP/HTTPS ve TLS handshake.
+- ✅ **Load Balancing & Proxy Concepts** — Forward proxy ve reverse proxy, Layer 4 ve Layer 7 load balancing, health checks, session persistence, TLS termination ve TLS passthrough.
 
 ---
 
