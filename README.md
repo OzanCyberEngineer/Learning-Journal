@@ -34,7 +34,7 @@ Yol haritası; teknik dokümantasyonlar, güvenlik odaklı değerlendirmeler, uy
 ## 🌐 Level 1: Foundations of Systems & Security — 🚧 In Progress
 ---
 
-## 🌐 Module 01: Advanced Networking for Platforms — 🚧 In Progress
+## 🌐 Module 01: Advanced Networking for Platforms — ✅ In Progress
 
 - ✅ **Physical & Data Link Layers** — OSI ve TCP/IP modelleri, encapsulation, fiziksel sinyaller, Ethernet frame yapısı, MAC addressing, switching, MTU, interface counters ve Layer 1/2 troubleshooting.
 - ✅ **ARP & Local Network Dynamics** — ARP çalışma mantığı, neighbor table, ARP cache durumları, gratuitous ARP, proxy ARP, ARP spoofing riskleri ve Dynamic ARP Inspection.
